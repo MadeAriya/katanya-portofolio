@@ -89,19 +89,19 @@ export default function About() {
             <span className="w-[120px] h-[5px] bg-[#38383C]"></span>
           </div>
           <div className='grid mx-auto md:grid-cols-3 grid-cols-1 mt-10 gap-0 max-w-[700px]'>
-            <div className="bg-red-700 w-[200px]">
+            <div className="w-[200px]">
               <a href="/images/sertifikat_course_123_3524263_211124154307_page-0001.jpg" target="_blank" rel="noopener noreferrer">
                 <Image src='/images/sertifikat_course_123_3524263_211124154307_page-0001.jpg' alt="" width={200} height={200}/>
               </a>
             </div>
-            <div className="bg-red-700 w-[200px]">
+            <div className="w-[200px]">
               <a href="/images/certificate-redsystem.jpg" target="_blank" rel="noopener noreferrer">
               <Image src='/images/certificate-redsystem.jpg' alt="" width={200} height={200}/>
               </a>
             </div>
-            <div className="bg-red-700 w-[200px]">
+            <div className="w-[200px]">
               <a href="/images/certificate-indoapps.png" target="_blank" rel="noopener noreferrer">
-              <Image src='/images/certificate-indoapps.png' alt="" width={200} height={220}/>
+              <Image src='/images/certificate-indoapps.png' alt="" width={200} height={250}/>
               </a>
             </div>
           </div>

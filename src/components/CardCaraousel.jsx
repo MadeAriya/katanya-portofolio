@@ -56,9 +56,9 @@ const cards = [
         </div>
     </>
   )},
-  { id: 3, content: (
-    <h1>Anjay</h1>
-  )},
+  // { id: 3, content: (
+  //   <h1>Anjay</h1>
+  // )},
 ];
 
 export default function CardCarousel() {
