@@ -8,28 +8,28 @@ const cards = [
   { id: 1, content: ( 
     <>
         <h1 className='font-montserrat text-center text-xl my-3 mx-auto font-bold ml-8'>Front End</h1>
-        <div className='grid grid-cols-2 justify-center gap-3 mt-2 z-5'>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
-                <Image src="/images/tail.svg" alt='' width={30} height={30}/>
+        <div className='grid grid-cols-2 w-[185px] md:w-auto justify-center gap-3 mt-2 z-5 mx-auto'>
+            <div className='flex justify-center items-center bg-[#282829] w-full rounded-[10px] p-2'>
+                <Image src="/images/tail.svg" alt='' width={25} height={25} className='p-2'/>
                 <p className='font-montserrat text-xs'>Tailwind</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
+            <div className='flex justify-center gap-1 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/re.svg" alt='' width={30} height={30}/>
                 <p className='font-montserrat text-xs'>React</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
-                <Image src="/images/bootstrap.svg" alt='' width={25} height={25}/>
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+                <Image src="/images/bootstrap.svg" alt='' width={20} height={20}/>
                 <p className='font-montserrat text-xs'>Bootstrap</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/html-5-svgrepo-com.svg" alt='' width={30} height={30}/>
                 <p className='font-montserrat text-xs'>HTML</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/css-3-svgrepo-com.svg" alt='' width={30} height={30}/>
                 <p className='font-montserrat text-xs'>CSS</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/javascript-logo-svgrepo-com.svg" alt='' width={20} height={20}/>
                 <p className='font-montserrat text-xs'>Javascript</p>
             </div>
@@ -40,16 +40,16 @@ const cards = [
   { id: 2, content: (
     <>
         <h1 className='font-montserrat text-center text-xl my-3 mx-auto font-bold ml-8'>Back End</h1>
-        <div className='grid grid-cols-2 justify-center gap-3 mt-2 z-5'>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
+        <div className='grid grid-cols-1 w-[185px] md:w-auto justify-center items-center gap-3 mt-2 z-5 mx-auto bg-yellow-300'>
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/laravel-svgrepo-com.svg" alt='' width={30} height={30}/>
                 <p className='font-montserrat text-xs'>Laravel</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/javascript-logo-svgrepo-com.svg" alt='' width={20} height={20}/>
                 <p className='font-montserrat text-xs'>Javascript</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2 mx-3'>
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/php-svgrepo-com.svg" alt='' width={25} height={25}/>
                 <p className='font-montserrat text-xs'>PHP</p>
             </div>
@@ -76,7 +76,7 @@ export default function CardCarousel() {
           return (
             <motion.div
                 key={card.id}
-                className="absolute top-1/2 left-1/2 w-64 h-96 bg-[#38383C] rounded-xl shadow-xl cursor-pointer transition-all duration-500 border-1 border-[#333336]"
+                className="absolute top-1/2 left-1/2 md:w-64 h-96 bg-[#38383C] rounded-xl shadow-xl cursor-pointer transition-all duration-500 border-1 border-[#333336]"
                 style={{
                     transform: `
                     translate(-50%, -50%)
@@ -89,7 +89,7 @@ export default function CardCarousel() {
                 }}
                 >
                     <Image src='/images/bg.png' alt='' fill className='absolute top-0 right-0 -z-1'/>
-                    <div className='w-[210px]'>
+                    <div className='w-[210px] mx-auto'>
                         {card.content}
                     </div>
                 </motion.div>

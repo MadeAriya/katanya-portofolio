@@ -12,7 +12,7 @@ export default function Project(){
             <main className='relative z-30'>
                 <Navbar/>
                 
-                <section className='mx-10 md:mx-40 mt-40'>
+                <section className='mx-3 flex flex-col justify-center md:mx-40 mt-40'>
                     <div className="flex gap-5 items-center">
                         <h1 className="font-montserrat  text-[20px]">Projects</h1>
                         <span className="w-[80px] h-[5px] bg-[#38383C]"></span>

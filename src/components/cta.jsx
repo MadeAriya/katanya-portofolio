@@ -12,7 +12,7 @@ export default function Cta(){
                 </div>
                 <h1 className='font-montserrat font-bold text-[40px]'>Let's 🚀 Work Together</h1>
                 <p className='font-montserrat mt-5'>Need a developer to bring your idea to life? I’m here to help — let’s talk</p>
-                <div className='grid gap-3 mt-10 grid-cols-5'>
+                <div className='grid gap-3 mt-10 grid-cols-3 md:grid-cols-5'>
                     <a href="https://www.linkedin.com/in/i-made-ariya-putra" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#0077B5] rounded-[5px] flex items-center justify-center'>
                     <Image src="/images/linkedin.svg" alt="" width={30} height={30} className='my-auto'/>
                     </a>

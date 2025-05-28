@@ -6,18 +6,18 @@ import { useState } from "react";
 export default function ImageHoverView({ src, alt, width, height, href, title, description }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="project-card group mt-10 relative w-[355px] h-[300px] md:w-[1000px] md:h-[500px]">
+    <div className="project-card group mt-10 relative w-[340px] h-[200px] md:w-[1000px] md:h-[500px]">
       <Image src={src} alt={alt} width={width} height={height} fill className="object-cover"/>
 
-      <div className="absolute bottom-4 left-4 right-4 bg-[#38383C] z-3 text-white px-4 py-3 shadow-md w-500px flex justify-between items-center">
+      <div className="absolute bottom-4 left-4 right-4 bg-[#38383C] z-3 text-white px-4 py-3 shadow-md w-500px flex justify-between items-center opacity-50">
         <span>
-        <h1 className="font-montserrat text-lg font-semibold">{title}</h1>
-            <p className="font-montserrat text-sm text-gray-300">{description}</p>
+        <h1 className="font-montserrat text-sm md:text-lg font-semibold">{title}</h1>
+            <p className="font-montserrat text-xs md:text-sm text-gray-300">{description}</p>
         </span>
-            <Link href={href} className="text-xs">Visit Site<i className="fa-solid fa-arrow-up-right-from-square mx-2 text-xs"></i></Link>
+            <Link href={href} className="text-xs hidden md:block">Visit Site<i className="fa-solid fa-arrow-up-right-from-square mx-2 text-xs"></i></Link>
           </div>
       <div
-        className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover:opacity-50 transition duration-300 rounded-lg"
+        className="absolute inset-0 flex items-center justify-center bg-black/40 md:opacity-0 group-hover:opacity-50 transition duration-300 rounded-lg"
       >
         <button
             onClick={() => setIsModalOpen(true)}

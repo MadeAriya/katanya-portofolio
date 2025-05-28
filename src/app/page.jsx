@@ -32,9 +32,9 @@ export default function Home() {
         <Image src="/images/mask.png" alt="" width={1400} height={700}/>
       </div>
 
-      <section className="mt-30 mx-10 md:mx-40 flex flex-col">
-        <h1 className="font-montserrat text-white text-[40px] font-bold">Explore My Works</h1>
-        <p className="font-montserrat text-white w-[400px]">Discover innovative web solutions crafted with passion and precision.</p>
+      <section className="mt-30 mx-3 md:mx-40 flex flex-col">
+        <h1 className="font-montserrat text-white text-[40px] font-bold mx-7">Explore My Works</h1>
+        <p className="font-montserrat text-white w-[300px] mx-7">Discover innovative web solutions crafted with passion and precision.</p>
           <ImageHover
           src="/images/yaguwipa.png"
           alt="Yayasan Guna Widya Paramesthi"

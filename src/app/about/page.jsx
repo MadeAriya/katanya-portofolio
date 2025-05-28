@@ -40,7 +40,7 @@ export default function About() {
             iconStyle={{ background: '#1D1D1F', color: '#fff', textAlign: 'center'}}
             icon={<i className="fa-solid fa-briefcase mt-3 md:mt-5 text-base md:text-xl"></i>}
           >
-            <div className="absolute top-0 -mt-16 left-0 w-[400px] h-[400px] z-1">
+            <div className="absolute top-0 -mt-29 md:-mt-16 left-0 w-[248px] md:w-[400px] h-[400px] z-1">
               <Image src='/images/blur.svg' alt="" fill></Image>
             </div>
             <div className="relative z-6">
@@ -59,7 +59,7 @@ export default function About() {
             iconStyle={{ background: '#1D1D1F', color: '#fff', textAlign: 'center'}}
             icon={<i className="fa-solid fa-briefcase mt-3 md:mt-5 text-base md:text-xl"></i>}
           >
-            <div className="absolute top-0 -mt-16 left-0 w-[400px] h-[400px] z-1">
+            <div className="absolute top-0 -mt-29 md:-mt-16 left-0 w-[248px] md:w-[400px] h-[400px] z-1">
               <Image src='/images/blur.svg' alt="" fill></Image>
             </div>
             <div className="relative z-6">
@@ -76,12 +76,12 @@ export default function About() {
         <section className="relative mx-10 mt-20">
           <Image src='/images/footer-grid.svg' alt="" fill className="absolute w-full"></Image>
           <div className="flex gap-5 justify-center items-center">
-            <span className="w-[120px] h-[5px] bg-[#38383C]"></span>
-            <h1 className="font-montserrat font-extrabold text-[30px] md:text-[40px]">Skills Set</h1>
-            <span className="w-[120px] h-[5px] bg-[#38383C]"></span>
+            <span className="w-[70px] md:w-[120px] h-[5px] bg-[#38383C]"></span>
+            <h1 className="font-montserrat font-extrabold text-[20px] md:text-[40px]">Skills Set</h1>
+            <span className="w-[70px] md:w-[120px] h-[5px] bg-[#38383C]"></span>
           </div>
-          <CardCarousel />
         </section>
+        <CardCarousel />
 
         <section className="mx-10 mt-30">
           <div className="flex gap-5 justify-center items-center">
