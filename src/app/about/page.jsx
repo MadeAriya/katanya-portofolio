@@ -85,7 +85,7 @@ export default function About() {
 
         <section className="mx-10 mt-30">
           <div className="flex gap-5 justify-center items-center">
-            <h1 className="font-montserrat font-extrabold text-[40px]">Experience</h1>
+            <h1 className="font-montserrat font-extrabold text-[40px]">Certificate</h1>
             <span className="w-[120px] h-[5px] bg-[#38383C]"></span>
           </div>
           <div className='grid mx-auto md:grid-cols-3 grid-cols-1 mt-10 gap-0 max-w-[700px]'>

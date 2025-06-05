@@ -8,6 +8,9 @@ import  Image  from 'next/image';
 export const metadata = {
   title: "Ariya Portofolio",
   description: "Ariya Portofolio | Web Developer | Tech Enthusiast",
+  icon: {
+    icon: '/images/favicon.jpg'
+  }
 };
 
 export default function RootLayout({ children }) {
