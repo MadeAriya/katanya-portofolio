@@ -18,21 +18,30 @@ export default function Project(){
                         <span className="w-[80px] h-[5px] bg-[#38383C]"></span>
                     </div>
                     <h1 className='font-montserrat font-extrabold text-[40px]'>A showcase of the websites I've built, reflecting my skills and creativity in web development.</h1>
+                    <div className='grid md:grid-cols-2 gap-2 md:gap-4 mt-10'>
+
                     <ImageHover
-                              src="/images/yaguwipa.png"
-                              alt="Yayasan Guna Widya Paramesthi"
-                              href="https://yaguwipa.org/"
-                              title="Yayasan Guna Widya Paramesthi"
-                              description="Laravel | Bootstrap | Worked on a foundation website for a client."
-                              />
+                                  src="/images/yaguwipa.png"
+                                  alt="Yayasan Guna Widya Paramesthi"
+                                  href="https://yaguwipa.org/"
+                                  width="600"
+                                  height="600"
+                                  title="Yayasan Guna Widya Paramesthi"
+                                  description="I developed a foundation website for a client to showcase their vision, programs, and donation opportunities. The site is designed to be informative, responsive, and easy to manage."
+                                  techStack={["Laravel", "Bootstrap", "MySQL"]}
+                                  />
                     
-                              <ImageHover
-                              src="/images/red-clinic.png"
-                              alt="Red Clinic"
-                              href="https://design.redsystem.id/klinik/design-2/"
-                              title="Red Clinic"
-                              description="Worked on company website templates by updating content and layout during internship."
-                              />
+                                <ImageHover
+                                src="/images/red-clinic.png"
+                                alt="Red Clinic"
+                                width="600"
+                                height="600"
+                                href="https://design.redsystem.id/klinik/design-2/"
+                                title="Red Clinic"
+                                description="Worked on company website templates by updating content and layout during internship."
+                                techStack={["Bootstrap"]}
+                                />
+                                </div>
                 </section>
                 <Cta/>
                 <Footer/>

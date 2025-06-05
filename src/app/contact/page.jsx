@@ -57,28 +57,28 @@ export default function Contact(){
                                         <Link href='https://www.linkedin.com/in/i-made-ariya-putra'>Linkedin</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
                                     </div>
                                     <div className='flex gap-2 justify-center items-center'>
-                                        <a href="https://www.linkedin.com/in/i-made-ariya-putra" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#E1306C] rounded-[5px] flex items-center justify-center'>
+                                        <a href="https://www.instagram.com/mdeariya_/" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#E1306C] rounded-[5px] flex items-center justify-center'>
                                         <Image src="/images/instagram.svg" alt="" width={30} height={30} className='my-auto'/>
                                         </a>
-                                        <Link href='https://www.linkedin.com/in/i-made-ariya-putra'>Instagram</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
+                                        <Link href='https://www.instagram.com/mdeariya_/'>Instagram</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
                                     </div>
                                     <div className='flex gap-2 justify-center items-center'>
-                                        <a href="https://www.linkedin.com/in/i-made-ariya-putra" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#000] rounded-[5px] flex items-center justify-center'>
+                                        <a href="https://github.com/MadeAriya/" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#000] rounded-[5px] flex items-center justify-center'>
                                         <Image src="/images/github.svg" alt="" width={60} height={60} className='my-auto'/>
                                         </a>
-                                        <Link href='https://www.linkedin.com/in/i-made-ariya-putra'>Github</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
+                                        <Link href='https://github.com/MadeAriya/'>Github</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
                                     </div>
                                     <div className='flex gap-2 justify-center items-center'>
-                                        <a href="https://www.linkedin.com/in/i-made-ariya-putra" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#5865F2] rounded-[5px] flex items-center justify-center'>
+                                        <a href="https://discord.com/users/694010733070909521" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#5865F2] rounded-[5px] flex items-center justify-center'>
                                         <Image src="/images/discord.svg" alt="" width={30} height={30} className='my-auto'/>
                                         </a>
-                                        <Link href='https://www.linkedin.com/in/i-made-ariya-putra'>Discord</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
+                                        <Link href='https://discord.com/users/694010733070909521'>Discord</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
                                     </div>
                                     <div className='flex gap-2 justify-center items-center'>
-                                        <a href="https://www.linkedin.com/in/i-made-ariya-putra" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#1877F2] rounded-[5px] flex items-center justify-center'>
+                                        <a href="https://www.facebook.com/i.m.putra.3576?mibextid=ZbWKwL" className='w-[60px] h-[60px] bg-gradient-to-br from-[#D9D9D9] to-[#1877F2] rounded-[5px] flex items-center justify-center'>
                                         <Image src="/images/facebook.svg" alt="" width={30} height={30} className='my-auto'/>
                                         </a>
-                                        <Link href='https://www.linkedin.com/in/i-made-ariya-putra'>Facebook</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
+                                        <Link href='https://www.facebook.com/i.m.putra.3576?mibextid=ZbWKwL'>Facebook</Link><Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10}/>
                                     </div>
                             </div>
                         </section>

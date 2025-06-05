@@ -35,21 +35,29 @@ export default function Home() {
       <section className="mt-30 mx-3 md:mx-40 flex flex-col">
         <h1 className="font-montserrat text-white text-[40px] font-bold mx-7">Explore My Works</h1>
         <p className="font-montserrat text-white w-[300px] mx-7">Discover innovative web solutions crafted with passion and precision.</p>
-          <ImageHover
-          src="/images/yaguwipa.png"
-          alt="Yayasan Guna Widya Paramesthi"
-          href="https://yaguwipa.org/"
-          title="Yayasan Guna Widya Paramesthi"
-          description="Laravel | Bootstrap | Worked on a foundation website for a client."
-          />
+          <div className='grid md:grid-cols-2 gap-2 md:gap-4 mt-10'>
+              <ImageHover
+              src="/images/yaguwipa.png"
+              alt="Yayasan Guna Widya Paramesthi"
+              href="https://yaguwipa.org/"
+              width="600"
+              height="600"
+              title="Yayasan Guna Widya Paramesthi"
+              description="I developed a foundation website for a client to showcase their vision, programs, and donation opportunities. The site is designed to be informative, responsive, and easy to manage."
+              techStack={["Laravel", "Bootstrap", "MySQL"]}
+              />
 
-          <ImageHover
-          src="/images/red-clinic.png"
-          alt="Red Clinic"
-          href="https://design.redsystem.id/klinik/design-2/"
-          title="Red Clinic"
-          description="Worked on company website templates by updating content and layout during internship."
-          />
+            <ImageHover
+            src="/images/red-clinic.png"
+            alt="Red Clinic"
+            width="600"
+            height="600"
+            href="https://design.redsystem.id/klinik/design-2/"
+            title="Red Clinic"
+            description="Worked on company website templates by updating content and layout during internship."
+            techStack={["Bootstrap"]}
+            />
+          </div>
 
           <div className='mx-auto'>
             <Link href="/about" className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] mt-5 h-[55px] w-[200px]">More Project<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    

@@ -3,49 +3,43 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function ImageHoverView({ src, alt, width, height, href, title, description }) {
+import { SiLaravel, SiBootstrap, SiMysql, SiReact, SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+
+const techIcons = {
+  Laravel: <SiLaravel className="text-red-500" />,
+  Bootstrap: <SiBootstrap className="text-purple-500" />,
+  MySQL: <SiMysql className="text-blue-500" />,
+  React: <SiReact className="text-blue-400" />,
+  Tailwind: <SiTailwindcss className="text-teal-400" />,
+  Express: <SiExpress className="text-gray-300" />,
+  MongoDB: <SiMongodb className="text-green-500" />
+};
+
+export default function ImageHoverView({ src, alt, width, height, href, title, description, techStack }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div className="project-card group mt-10 relative w-[340px] h-[200px] md:w-[1000px] md:h-[500px]">
-      <Image src={src} alt={alt} width={width} height={height} fill className="object-cover"/>
-
-      <div className="absolute bottom-4 left-4 right-4 bg-[#38383C] z-3 text-white px-4 py-3 shadow-md w-500px flex justify-between items-center opacity-50">
-        <span>
-        <h1 className="font-montserrat text-sm md:text-lg font-semibold">{title}</h1>
-            <p className="font-montserrat text-xs md:text-sm text-gray-300">{description}</p>
-        </span>
+      <div className='relative p-5 h-[auto] w-auto bg-[#38383C] border-1 border-[#333336] rounded-xl'>
+        <Image src={src} alt={alt} width={width} height={height} className="rounded-xl"/>
+        <Image src='/images/bg.png' alt='' fill className='absolute top-0 right-0 z-5'/>
+        <div className='mt-3'>
+          <h1 className='font-montserrat font-bold text-xl'>{title}</h1>
+          <p className="font-montserrat">{description}</p>
+        </div>
+        <div className="flex justify-between items-center mt-4">
+            {techStack && (
+            <div className="flex gap-3 mt-2 items-center flex-wrap">
+              {techStack.map((tech, index) => (
+                <div key={index} className="flex items-center gap-1 text-white text-sm">
+                  {techIcons[tech] ?? null}
+                  <span className="hidden md:inline font-montserrat">{tech}</span>
+                </div>
+              ))}
+            </div>
+          )}
+          <div className="">
             <Link href={href} className="text-xs hidden md:block">Visit Site<i className="fa-solid fa-arrow-up-right-from-square mx-2 text-xs"></i></Link>
           </div>
-      <div
-        className="absolute inset-0 flex items-center justify-center bg-black/40 md:opacity-0 group-hover:opacity-50 transition duration-300 rounded-lg"
-      >
-        <button
-            onClick={() => setIsModalOpen(true)}
-            className="bg-white bg-opacity-20 p-2 rounded-full shadow-lg text-black text-sm font-semibold"
-          >
-            <i className="fa-solid fa-plus"></i>
-          </button>
-      </div>
-      {isModalOpen && (
-          <div className="fixed inset-0 bg-[#1D1D1F] bg-opacity-60 z-50 flex items-center justify-center p-4">
-            <div className="relative max-w-4xl w-full">
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="absolute top-2 right-2 text-white text-2xl font-bold hover:text-gray-300"
-              >
-              <i className="fa-solid fa-circle-xmark text-black text-5xl p-5"></i>
-              </button>
-  
-              <Image
-                src={src}
-                alt={alt}
-                width={1200}
-                height={800}
-                className="w-full h-auto"
-              />
-            </div>
-          </div>
-      )}
+        </div>
     </div>
   );
 }

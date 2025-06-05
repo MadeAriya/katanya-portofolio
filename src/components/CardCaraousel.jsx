@@ -40,7 +40,7 @@ const cards = [
   { id: 2, content: (
     <>
         <h1 className='font-montserrat text-center text-xl my-3 mx-auto font-bold ml-8'>Back End</h1>
-        <div className='grid grid-cols-1 w-[185px] md:w-auto justify-center items-center gap-3 mt-2 z-5 mx-auto bg-yellow-300'>
+        <div className='grid grid-cols-1 w-[185px] md:w-auto justify-center items-center gap-3 mt-2 z-5 mx-auto'>
             <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
                 <Image src="/images/laravel-svgrepo-com.svg" alt='' width={30} height={30}/>
                 <p className='font-montserrat text-xs'>Laravel</p>
