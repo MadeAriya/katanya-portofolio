@@ -8,7 +8,7 @@ import  Image  from 'next/image';
 export const metadata = {
   title: "Ariya Portofolio",
   description: "Ariya Portofolio | Web Developer | Tech Enthusiast",
-  icon: {
+  icons: {
     icon: '/images/favicon.jpg'
   }
 };
@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
+          <link rel="icon" href="/images/favicon.jpg" type="image/jpg" />
       </head>
       <body
         className={`antialiased select-none`}
