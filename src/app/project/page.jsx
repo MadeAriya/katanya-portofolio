@@ -47,9 +47,20 @@ export default function Project(){
                                 alt="Workly"
                                 width="600"
                                 height="600"
-                                href="https://design.redsystem.id/klinik/design-2/"
+                                href=""
                                 title="Workly"
                                 description="A smart and complete worker management system designed to simplify your workflow and boost team efficiency."
+                                techStack={["Laravel", "Bootstrap"]}
+                                />
+
+                                <ImageHover
+                                src="/images/red-property.png"
+                                alt="Red Property"
+                                width="600"
+                                height="600"
+                                href="https://design.redsystem.id/property/design-1/"
+                                title="Red Property"
+                                description="Worked on company website templates by updating content and layout during internship."
                                 techStack={["Laravel", "Bootstrap"]}
                                 />
                                 </div>

@@ -57,17 +57,6 @@ export default function Home() {
             description="Worked on company website templates by updating content and layout during internship."
             techStack={["Bootstrap"]}
             />
-
-            <ImageHover
-                                src="/images/payro.png"
-                                alt="Workly"
-                                width="600"
-                                height="600"
-                                href="https://design.redsystem.id/klinik/design-2/"
-                                title="Workly"
-                                description="A smart and complete worker management system designed to simplify your workflow and boost team efficiency."
-                                techStack={["Laravel", "Bootstrap"]}
-                                />
           </div>
 
           <div className='mx-auto'>
