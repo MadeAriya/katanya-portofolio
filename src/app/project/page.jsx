@@ -63,6 +63,17 @@ export default function Project(){
                                 description="Worked on company website templates by updating content and layout during internship."
                                 techStack={["Laravel", "Bootstrap"]}
                                 />
+
+                                <ImageHover
+                                src="/images/coffee-aura.png"
+                                alt="Coffee Aura"
+                                width="600"
+                                height="600"
+                                href=""
+                                title="Coffee Aura"
+                                description="A responsive WordPress-based website created for a local coffee shop. Built using the Wordpress theme and customized with Elementor, this site highlights the brand's identity through a warm and inviting design. Features include a clean homepage, menu section, contact form, and call-to-action buttons — all tailored for a smooth user experience."
+                                techStack={["Wordpress"]}
+                                />
                                 </div>
                 </section>
                 <Cta/>

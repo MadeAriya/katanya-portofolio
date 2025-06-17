@@ -3,13 +3,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-import { SiLaravel, SiBootstrap, SiMysql, SiReact, SiTailwindcss, SiExpress, SiMongodb } from "react-icons/si";
+import { SiLaravel, SiBootstrap, SiMysql, SiReact, SiTailwindcss, SiExpress, SiMongodb, SiWordpress } from "react-icons/si";
 
 const techIcons = {
   Laravel: <SiLaravel className="text-red-500" />,
   Bootstrap: <SiBootstrap className="text-purple-500" />,
   MySQL: <SiMysql className="text-blue-500" />,
   React: <SiReact className="text-blue-400" />,
+  Wordpress: <SiWordpress className="text-blue-400" />,
   Tailwind: <SiTailwindcss className="text-teal-400" />,
   Express: <SiExpress className="text-gray-300" />,
   MongoDB: <SiMongodb className="text-green-500" />
