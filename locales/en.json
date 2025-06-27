@@ -1,0 +1,99 @@
+{
+  "home": {
+    "hero": {
+      "tagline": "I MADE ARIYA PUTRA",
+      "title": "Website Developer & Tech Enthusiast",
+      "desc": "Website developer who currently focused on Web Development. Other than that, I also interested in UX/UI Design, Mobile and AI Development, and IOT. I love to learn new things and always open to new opportunities."
+    },
+    "intro": {
+      "title": "Hi There, I'm Ariya",
+      "desc": "I am a 17-year-old student from Bali passionate about web programming and technology. With experience in designing websites for e-commerce and learning platforms, I’ve mastered the basics of HTML, CSS, JavaScript, and Laravel. Eager to collaborate and innovate, I’m always seeking new challenges and opportunities to grow. Let’s create something impactful together!"
+    },
+    "button": {
+      "moreAbout": "More About Me",
+      "moreProject": "More Project"
+    },
+    "projects": {
+      "title": "Explore My Works",
+      "desc": "Discover innovative web solutions crafted with passion and precision.",
+      "yaguwipa": {
+        "title": "Yayasan Guna Widya Paramesthi",
+        "desc": "I developed a foundation website for a client to showcase their vision, programs, and donation opportunities. The site is designed to be informative, responsive, and easy to manage."
+      },
+      "redclinic": {
+        "title": "Red Clinic",
+        "desc": "Worked on company website templates by updating content and layout during internship."
+      }
+    },
+    "cta": {
+      "title": "Let's 🚀 Work Together",
+      "desc": "Need a developer to bring your idea to life? I'm here to help — let's talk"
+    }
+  },
+  "about": {
+    "title": "About",
+    "description": {
+      "desc1": "I am a 17-year-old programmer from Bali with a keen interest in web programming and technology. Over the past few years, I have learned the basics of web development, including HTML, CSS, and JavaScript, and explored backend development with Laravel.",
+      "desc2": "I have completed several projects, designing websites for e-commerce platforms and learning management systems. These experiences have honed my skills and deepened my understanding of web development.",
+      "desc3": "I am highly motivated to collaborate with other developers and seek partnerships with companies to expand my knowledge and contribute to meaningful projects.",
+      "desc4": "My passion for technology drives me to continuously improve and innovate, and I am eager to embrace new challenges and opportunities in web development."
+    },
+    "sectionTitles": {
+      "experience": "Experience",
+      "skills": "Skills Set",
+      "certificate": "Certificate"
+    },
+    "jobs": {
+      "job1": {
+        "title": "Front End Developer",
+        "company": "Redsystem",
+        "location": "Bali, ID",
+        "date": "Sep 2024 - Nov 2024",
+        "desc": "During my internship at Redsystem, I specialized in customizing website templates to align with specific content and themes requested by the company, successfully delivering projects for two key industries: clinics and property. This experience sharpened my skills in creating visually appealing and functional designs tailored to diverse business needs."
+      },
+      "job2": {
+        "title": "Web Development and Digital Management",
+        "company": "Indo Apps Solusindo",
+        "location": "Bali, ID",
+        "date": "Sep 2024 - Nov 2024",
+        "desc": "During my internship at PT Indo Apps Solusindo, I contributed to various projects that strengthened my technical and organizational capabilities. My primary responsibilities included:"
+      }
+    }
+  },
+  "project": {
+    "title": "Projects",
+    "description": "A showcase of the websites I've built, reflecting my skills and creativity in web development.",
+    "items": {
+      "yaguwipa": {
+        "desc": "I developed a foundation website for a client to showcase their vision, programs, and donation opportunities. The site is designed to be informative, responsive, and easy to manage."
+      },
+      "redclinic": {
+        "desc": "Worked on company website templates by updating content and layout during internship."
+      },
+      "workly": {
+        "desc": "A smart and complete worker management system designed to simplify your workflow and boost team efficiency."
+      },
+      "redproperty": {
+        "desc": "Worked on company website templates by updating content and layout during internship."
+      },
+      "coffeeaura": {
+        "desc": "A responsive WordPress-based website created for a local coffee shop. Built using the WordPress theme and customized with Elementor, this site highlights the brand’s identity through a warm and inviting design. Features include a clean homepage, menu section, contact form, and call-to-action buttons — all tailored for a smooth user experience."
+      },
+      "redhillsvilla": {
+        "desc": "Red Hills Villa is a serene luxury getaway nestled in nature, brought to life through a visually immersive and user-friendly website experience."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "sectionTitle": "Get In Touch",
+    "desc": "if you're interested in hiring me or collaborating, feel free to reach out for recruitment, partnership or follow to stay in touch",
+    "form": {
+      "title": "Or send me a message",
+      "name": "Insert Name",
+      "email": "Insert Email",
+      "message": "Write a message",
+      "button": "Send Message"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import Lottie from 'lottie-react';
 import scrollDown from '@/assets/lottie/Animation - 1747623153577.json';
 

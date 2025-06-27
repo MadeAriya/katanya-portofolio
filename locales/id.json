@@ -1,0 +1,99 @@
+{
+  "home": {
+    "hero": {
+      "tagline": "I MADE ARIYA PUTRA",
+      "title": "Pengembang Website & Penggemar Teknologi",
+      "desc": "Seorang pengembang website yang saat ini fokus pada Web Development. Selain itu, saya juga tertarik pada UX/UI Design, pengembangan Mobile dan AI, serta IOT. Saya senang belajar hal baru dan selalu terbuka pada peluang baru."
+    },
+    "intro": {
+      "title": "Halo, Saya Ariya",
+      "desc": "Saya adalah siswa berusia 17 tahun dari Bali yang antusias dengan pemrograman dan teknologi web. Dengan pengalaman mendesain website untuk e-commerce dan platform pembelajaran, saya telah menguasai dasar-dasar HTML, CSS, JavaScript, dan Laravel. Saya senang berkolaborasi dan berinovasi, serta selalu mencari tantangan dan peluang baru untuk berkembang. Mari ciptakan sesuatu yang berdampak bersama!"
+    },
+    "button": {
+      "moreAbout": "Tentang Saya",
+      "moreProject": "Proyek Lainnya"
+    },
+    "projects": {
+      "title": "Jelajahi Karya Saya",
+      "desc": "Temukan solusi web inovatif yang dirancang dengan penuh semangat dan ketelitian.",
+      "yaguwipa": {
+        "title": "Yayasan Guna Widya Paramesthi",
+        "desc": "Saya membuat situs yayasan untuk klien untuk menampilkan visi, program, dan peluang donasi mereka. Situs ini dirancang agar informatif, responsif, dan mudah dikelola."
+      },
+      "redclinic": {
+        "title": "Red Clinic",
+        "desc": "Bekerja dalam proyek template website perusahaan dengan memperbarui konten dan tata letak saat magang."
+      }
+    },
+    "cta": {
+      "title": "Yuk 🚀 Kerja Sama",
+      "desc": "Butuh developer untuk mewujudkan ide kamu? Saya siap bantu — ayo ngobrol!"
+    }
+  },
+  "about": {
+    "title": "Tentang Saya",
+    "description": {
+      "desc1": "Saya programmer berusia 17 tahun dari Bali yang memiliki minat besar dalam pemrograman web dan teknologi. Selama beberapa tahun terakhir, saya telah mempelajari dasar-dasar pengembangan web, termasuk HTML, CSS, dan JavaScript, serta mengeksplorasi pengembangan backend dengan Laravel.",
+      "desc2": "Saya telah menyelesaikan beberapa proyek, mendesain situs web untuk platform e-commerce dan sistem manajemen pembelajaran. Pengalaman ini telah mengasah keterampilan saya dan memperdalam pemahaman saya tentang pengembangan web.",
+      "desc3": "Saya sangat termotivasi untuk berkolaborasi dengan pengembang lain dan menjalin kerja sama dengan perusahaan untuk memperluas pengetahuan dan berkontribusi pada proyek-proyek yang bermakna.",
+      "desc4": "Kecintaan saya pada teknologi mendorong saya untuk terus berkembang dan berinovasi, serta siap menghadapi tantangan dan peluang baru dalam dunia pengembangan web."
+    },
+    "sectionTitles": {
+      "experience": "Pengalaman",
+      "skills": "Keahlian",
+      "certificate": "Sertifikat"
+    },
+    "jobs": {
+      "job1": {
+        "title": "Front End Developer",
+        "company": "Redsystem",
+        "location": "Bali, ID",
+        "date": "Sep 2024 - Nov 2024",
+        "desc": "Selama magang di Redsystem, saya mengkhususkan diri dalam menyesuaikan template situs web agar sesuai dengan konten dan tema khusus yang diminta oleh perusahaan. Saya berhasil menyelesaikan proyek untuk dua industri utama: klinik dan properti. Pengalaman ini mengasah kemampuan saya dalam membuat desain yang menarik secara visual dan fungsional sesuai kebutuhan bisnis yang beragam."
+      },
+      "job2": {
+        "title": "Web Development and Digital Management",
+        "company": "Indo Apps Solusindo",
+        "location": "Bali, ID",
+        "date": "Feb 2024 - Mei 2024",
+        "desc": "Selama magang di PT Indo Apps Solusindo, saya berkontribusi pada berbagai proyek yang memperkuat kemampuan teknis dan organisasi saya. Tanggung jawab utama saya meliputi: managing the company's website, managing the company's social media, creating websites for company clients, and managing competitions"
+      }
+    }
+  },
+  "project": {
+    "title": "Proyek",
+    "description": "Kumpulan website yang telah saya buat, mencerminkan keterampilan dan kreativitas saya dalam pengembangan web.",
+    "items": {
+      "yaguwipa": {
+        "desc": "Saya mengembangkan website yayasan untuk klien guna menampilkan visi, program, dan peluang donasi mereka. Situs ini dirancang agar informatif, responsif, dan mudah dikelola."
+      },
+      "redclinic": {
+        "desc": "Mengerjakan template website perusahaan dengan memperbarui konten dan tata letak selama magang."
+      },
+      "workly": {
+        "desc": "Sistem manajemen pekerja yang cerdas dan lengkap, dirancang untuk menyederhanakan alur kerja dan meningkatkan efisiensi tim."
+      },
+      "redproperty": {
+        "desc": "Mengerjakan template website perusahaan dengan memperbarui konten dan tata letak selama magang."
+      },
+      "coffeeaura": {
+        "desc": "Website berbasis WordPress yang responsif untuk kedai kopi lokal. Dibangun menggunakan tema WordPress dan dikustomisasi dengan Elementor, situs ini menampilkan identitas merek melalui desain yang hangat dan menarik. Fitur mencakup beranda yang bersih, bagian menu, formulir kontak, dan tombol ajakan bertindak — semuanya dirancang untuk pengalaman pengguna yang mulus."
+      },
+      "redhillsvilla": {
+        "desc": "Red Hills Villa adalah tempat liburan mewah yang tenang di tengah alam, dihidupkan melalui pengalaman website yang imersif dan ramah pengguna."
+      }
+    }
+  },
+  "contact": {
+    "title": "Kontak",
+    "sectionTitle": "Hubungi Saya",
+    "desc": "Jika Anda tertarik untuk merekrut atau berkolaborasi, jangan ragu untuk menghubungi saya untuk kerja sama, peluang rekrutmen, atau sekadar tetap terhubung.",
+    "form": {
+      "title": "Atau kirimkan pesan langsung",
+      "name": "Masukkan Nama",
+      "email": "Masukkan Email",
+      "message": "Tulis pesan Anda",
+      "button": "Kirim Pesan"
+    }
+  }
+}

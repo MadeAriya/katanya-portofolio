@@ -7,10 +7,10 @@ import { motion } from 'framer-motion';
 const cards = [
   { id: 1, content: ( 
     <>
-        <h1 className='font-montserrat text-center text-xl my-3 mx-auto font-bold ml-8'>Front End</h1>
-        <div className='grid grid-cols-2 w-[185px] md:w-auto justify-center gap-3 mt-2 z-5 mx-auto'>
+        <h1 className='font-montserrat text-center text-xl my-3 ml-3 mx-auto font-bold ml-8'>Front End</h1>
+        <div className='grid grid-cols-2 w-[220px] md:w-auto justify-center gap-3 mt-2 z-5 mx-auto'>
             <div className='flex justify-center items-center bg-[#282829] w-full rounded-[10px] p-2'>
-                <Image src="/images/tail.svg" alt='' width={25} height={25} className='p-2'/>
+                <Image src="/images/tail.svg" alt='' width={40} height={40} className='p-2'/>
                 <p className='font-montserrat text-xs'>Tailwind</p>
             </div>
             <div className='flex justify-center gap-1 items-center bg-[#282829] w-full rounded-[10px] p-2'>
@@ -33,7 +33,10 @@ const cards = [
                 <Image src="/images/javascript-logo-svgrepo-com.svg" alt='' width={20} height={20}/>
                 <p className='font-montserrat text-xs'>Javascript</p>
             </div>
-            
+            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+                <Image src="/images/wordpress-color-svgrepo-com.svg" alt='' width={20} height={20}/>
+                <p className='font-montserrat text-xs'>Wordpress</p>
+            </div>
         </div>
     </>
   )},
@@ -76,7 +79,7 @@ export default function CardCarousel() {
           return (
             <motion.div
                 key={card.id}
-                className="absolute top-1/2 left-1/2 md:w-64 h-96 bg-[#38383C] rounded-xl shadow-xl cursor-pointer transition-all duration-500 border-1 border-[#333336]"
+                className="absolute top-1/2 left-1/2 w-[300px] md:w-[300px] h-96 bg-[#38383C] rounded-xl shadow-xl cursor-pointer transition-all duration-500 border-1 border-[#333336]"
                 style={{
                     transform: `
                     translate(-50%, -50%)
@@ -89,7 +92,7 @@ export default function CardCarousel() {
                 }}
                 >
                     <Image src='/images/bg.png' alt='' fill className='absolute top-0 right-0 -z-1'/>
-                    <div className='w-[210px] mx-auto'>
+                    <div className='w-[220px] mx-auto'>
                         {card.content}
                     </div>
                 </motion.div>

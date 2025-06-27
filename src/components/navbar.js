@@ -1,24 +1,46 @@
 'use client';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { useState } from 'react';
+import { useLocale } from 'next-intl';
 
 export default function Navbar(){
     const [isOpen, setIsOpen] = useState(false);
     const toggleMenu = () => setIsOpen(!isOpen);
     const pathname = usePathname();
+    const locale = useLocale();
+    const router = useRouter();
+
+  const switchLocale = (newLocale) => {
+    const newPath = pathname.replace(/^\/(en|id)/, `/${newLocale}`);
+    router.push(newPath);
+  };
 
     return(
         <nav className="relative z-999 flex justify-between p-5 md:mx-25">
             <div>
                 <p className='font-island text-4xl'>Ariya</p>
             </div>
+            <div className="flex justify-end gap-3 text-white text-sm">
             <button id="hamburger" name="hamburger" type="button" className='' onClick={toggleMenu}>
                 <span className='w-[43px] h-[5px] my-1 block bg-white rounded-[5px]'></span>
                 <span className='w-[43px] h-[5px] my-1 block bg-white rounded-[5px]'></span>
                 <span className='w-[43px] h-[5px] my-1 block bg-white rounded-[5px]'></span>
             </button>
+              <button
+                onClick={() => switchLocale('en')}
+                className={locale === 'en' ? 'underline font-bold' : ''}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => switchLocale('id')}
+                className={locale === 'id' ? 'underline font-bold' : ''}
+              >
+                ID
+              </button>
+            </div>
             <AnimatePresence>
         {isOpen && (
           <motion.ul
@@ -36,16 +58,16 @@ export default function Navbar(){
               <i className="fa-solid fa-circle-xmark text-black text-5xl p-5"></i>
             </button>
             <li className="font-montserrat font-bold text-5xl text-black">
-              <Link href="/" className={pathname == '/' ? 'text-blue-500' : ''}>Home</Link>
+              <Link href={`/${locale}`} className={pathname == `/${locale}` ? 'text-blue-500' : ''}>Home</Link>
             </li>
             <li className="font-montserrat font-bold text-5xl text-black">
-              <Link href="/about" className={pathname == '/about' ? 'text-blue-500' : ''}>About Me</Link>
+              <Link href={`/${locale}/about`} className={pathname == `/${locale}/about` ? 'text-blue-500' : ''}>About Me</Link>
             </li>
             <li className="font-montserrat font-bold text-5xl text-black">
-              <Link href="/project" className={pathname == '/project' ? 'text-blue-500' : ''}>Project</Link>
+              <Link href={`/${locale}/project`} className={pathname == `/${locale}/project` ? 'text-blue-500' : ''}>Project</Link>
             </li>
             <li className="font-montserrat font-bold text-5xl text-black">
-              <Link href="/contact" className={pathname == '/contact' ? 'text-blue-500' : ''}>Contact</Link>
+              <Link href={`/${locale}/contact`} className={pathname == `/${locale}/contact` ? 'text-blue-500' : ''}>Contact</Link>
             </li>
             <div className="absolute bottom-4 left-0 w-full px-6 flex justify-between items-center">
                 <p className="text-black text-sm">Design & Develop by Ariya</p>
