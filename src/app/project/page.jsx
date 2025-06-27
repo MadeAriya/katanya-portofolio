@@ -20,7 +20,7 @@ export default function Project(){
                     <h1 className='font-montserrat font-extrabold text-[40px]'>A showcase of the websites I've built, reflecting my skills and creativity in web development.</h1>
                     <div className='grid md:grid-cols-2 gap-2 md:gap-4 mt-10'>
 
-                    <ImageHover
+                                <ImageHover
                                   src="/images/yaguwipa.png"
                                   alt="Yayasan Guna Widya Paramesthi"
                                   href="https://yaguwipa.org/"
@@ -74,8 +74,7 @@ export default function Project(){
                                 description="A responsive WordPress-based website created for a local coffee shop. Built using the Wordpress theme and customized with Elementor, this site highlights the brand's identity through a warm and inviting design. Features include a clean homepage, menu section, contact form, and call-to-action buttons — all tailored for a smooth user experience."
                                 techStack={["Wordpress"]}
                                 />
-                                </div>
-								
+
 								<ImageHover
                                 src="/images/red-hills-villa.png"
                                 alt="Red Hills Villa"
@@ -86,6 +85,7 @@ export default function Project(){
                                 description="Red Hills Villa is a serene luxury getaway nestled in nature, brought to life through a visually immersive and user-friendly website experience."
                                 techStack={["Wordpress"]}
                                 />
+                            </div>
                 </section>
                 <Cta/>
                 <Footer/>
