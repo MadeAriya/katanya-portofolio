@@ -75,6 +75,17 @@ export default function Project(){
                                 techStack={["Wordpress"]}
                                 />
                                 </div>
+								
+								<ImageHover
+                                src="/images/red-hills-villa.png"
+                                alt="Red Hills Villa"
+                                width="600"
+                                height="600"
+                                href=""
+                                title="Red Hills Villa"
+                                description="Red Hills Villa is a serene luxury getaway nestled in nature, brought to life through a visually immersive and user-friendly website experience."
+                                techStack={["Wordpress"]}
+                                />
                 </section>
                 <Cta/>
                 <Footer/>
