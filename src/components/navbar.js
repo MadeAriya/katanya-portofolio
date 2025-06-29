@@ -69,6 +69,9 @@ export default function Navbar(){
             <li className="font-montserrat font-bold text-5xl text-black">
               <Link href={`/${locale}/contact`} className={pathname == `/${locale}/contact` ? 'text-blue-500' : ''}>Contact</Link>
             </li>
+            <li className="font-montserrat font-bold text-5xl text-black">
+              <Link href={`/${locale}/pricing`} className={pathname == `/${locale}/pricing` ? 'text-blue-500' : ''}>Plan & Pricing</Link>
+            </li>
             <div className="absolute bottom-4 left-0 w-full px-6 flex justify-between items-center">
                 <p className="text-black text-sm">Design & Develop by Ariya</p>
                 <div className="space-x-4">

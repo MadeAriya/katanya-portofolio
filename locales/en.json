@@ -7,11 +7,45 @@
     },
     "intro": {
       "title": "Hi There, I'm Ariya",
-      "desc": "I am a 17-year-old student from Bali passionate about web programming and technology. With experience in designing websites for e-commerce and learning platforms, I’ve mastered the basics of HTML, CSS, JavaScript, and Laravel. Eager to collaborate and innovate, I’m always seeking new challenges and opportunities to grow. Let’s create something impactful together!"
+      "desc1": "Hey! I’m a freelance  web developer who loves helping small businesses get cool, professional websites—without spending a fortune.",
+      "desc2": "I know having a website today is super important to build trust and get your business noticed. So I’ll make sure your site looks great, works smoothly on any device, and fits exactly what your business needs—all at a price that won’t stress you out!"
+    },
+    "services": {
+      "title": "Custom Websites Built for Your Needs",
+      "desc": "With a focus on performance, clean code, and user experience, I’ll help you turn visitors into customers.",
+      "items": {
+        "one": "Small Business",
+        "two": "Photography",
+        "three": "Education",
+        "four": "Landing Page",
+        "more" : "And More.."
+      }
+    },
+    "whyme": {
+      "title" : "Why Me?",
+      "items": {
+        "item1": {
+          "title": "Affordable Price",
+          "desc" : "I offer professional-quality websites at budget-friendly prices — perfect for both business and personal projects."
+        },
+        "item2": {
+          "title": "Modern & Responsive Design",
+          "desc": "A responsive, aesthetic design tailored to match your brand's character and appeal."
+        },
+        "item3": {
+          "title": "All-in-One Package",
+          "desc": "Everything your website needs in one service — from design and development to optimization and post-launch support."
+        },
+        "item4": {
+          "title": "Client-Focused Workflow",
+          "desc": "I prioritize understanding your vision and goals, ensuring the final product reflects your brand perfectly."
+        }
+      }
     },
     "button": {
       "moreAbout": "More About Me",
-      "moreProject": "More Project"
+      "moreProject": "More Project",
+      "pricing": "See Pricing"
     },
     "projects": {
       "title": "Explore My Works",

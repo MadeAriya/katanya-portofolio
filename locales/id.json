@@ -3,11 +3,44 @@
     "hero": {
       "tagline": "I MADE ARIYA PUTRA",
       "title": "Pengembang Website & Penggemar Teknologi",
-      "desc": "Seorang pengembang website yang saat ini fokus pada Web Development. Selain itu, saya juga tertarik pada UX/UI Design, pengembangan Mobile dan AI, serta IOT. Saya senang belajar hal baru dan selalu terbuka pada peluang baru."
+      "desc": "Seorang pengembang website yang saat ini fokus pada pengembangan web. Selain itu, saya juga memiliki ketertarikan pada desain UX/UI, pengembangan aplikasi mobile dan kecerdasan buatan (AI), serta Internet of Things (IoT). Saya senang mempelajari hal-hal baru dan selalu terbuka terhadap peluang baru."
     },
     "intro": {
       "title": "Halo, Saya Ariya",
-      "desc": "Saya adalah siswa berusia 17 tahun dari Bali yang antusias dengan pemrograman dan teknologi web. Dengan pengalaman mendesain website untuk e-commerce dan platform pembelajaran, saya telah menguasai dasar-dasar HTML, CSS, JavaScript, dan Laravel. Saya senang berkolaborasi dan berinovasi, serta selalu mencari tantangan dan peluang baru untuk berkembang. Mari ciptakan sesuatu yang berdampak bersama!"
+      "desc1": "Hai! Saya adalah pengembang web lepas yang suka membantu bisnis kecil mendapatkan situs web yang keren dan profesional—tanpa menghabiskan banyak uang.",
+      "desc2": "Saya tahu memiliki situs web saat ini sangat penting untuk membangun kepercayaan dan mendapatkan perhatian untuk bisnis Anda. Jadi, saya akan memastikan situs Anda terlihat bagus, berfungsi dengan lancar di perangkat apa pun, dan sesuai dengan kebutuhan bisnis Anda—semua dengan harga yang tidak akan membuat Anda stres!"
+    },
+    "services": {
+      "title": "Website Kustom Sesuai Kebutuhan Anda",
+      "desc": "Dengan fokus pada performa, kode yang bersih, dan pengalaman pengguna, saya bantu ubah pengunjung menjadi pelanggan.",
+      "items": {
+        "one": "UMKM",
+        "two": "Fotografi",
+        "three": "Pendidikan",
+        "four": "Landing Page",
+        "more": "Dan Lainnya.."
+      }
+    },
+    "whyme": {
+      "title": "Kenapa Memilih Saya?",
+      "items": {
+        "item1": {
+          "title": "Harga Terjangkau",
+          "desc": "Saya menawarkan jasa pembuatan website dengan kualitas profesional namun tetap ramah di kantong, cocok untuk bisnis dan personal."
+        },
+        "item2": {
+          "title": "Desain Modern & Responsif",
+          "desc": "Desain yang responsif, menarik, dan disesuaikan dengan karakter brand Anda."
+        },
+        "item3": {
+          "title": "Paket Lengkap",
+          "desc": "Semua kebutuhan website Anda dalam satu layanan — mulai dari desain, pengembangan, optimasi, hingga dukungan setelah website live."
+        },
+        "item4": {
+          "title": "Fokus pada Klien",
+          "desc": "Saya mengutamakan pemahaman terhadap visi dan tujuan Anda, agar hasil akhir benar-benar mencerminkan brand Anda."
+        }
+      }
     },
     "button": {
       "moreAbout": "Tentang Saya",

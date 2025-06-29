@@ -46,8 +46,8 @@ export default async function LocaleLayout({ children, params }) {
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ScrollToTopButton/>
-          <div className="absolute"><Image src="/images/spotlight.png" alt="" width={400} height={400}/></div>
-          <div className="absolute right-0 scale-x-[-1]"><Image src="/images/spotlight.png" alt="" width={400} height={400}/></div>
+          <div className="absolute"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
+          <div className="absolute top-50 right-0 scale-x-[-1]"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
           <div className="absolute w-full h-screen opacity-10">
             <div className="relative w-full h-full">
               <Image
