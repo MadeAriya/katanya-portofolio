@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import createMiddleware from 'next-intl/middleware'
 
-const maintenanceMode = true
+const maintenanceMode = false
 
 const locales = ['en', 'id']
 

@@ -129,5 +129,108 @@
       "message": "Write a message",
       "button": "Send Message"
     }
+  },
+  "pricing": {
+    "title": "Choose the Perfect Website Plan",
+    "desc": "I build websites that are clean, fast, and built to grow with your business — without hidden costs or confusing packages.",
+    "button": {
+      "btnPackage": "Free Consultation"
+    },
+    "package": {
+      "item1": {
+        "title": "Starter",
+        "desc": "Perfect for small businesses or personal brands just starting their online journey. This package offers an affordable solution with essential features to launch your first professional website.",
+        "harga": "750000",
+        "maintenance": "Maintenance Price 120000",
+        "benefit": {
+          "1": "Free .com Domain",
+          "2": "Responsive Design",
+          "3": "Shared Hosting",
+          "4": "1 Business Email",
+          "5": "1 GB Storage",
+          "6": "Free SSL",
+          "7": "2x Free Minor Revisions",
+          "8": "Maintenance up to 1 month",
+          "9": "CMS Video Tutorial"
+        }
+      },
+      "item2": {
+        "title": "Standard",
+        "desc": "A great choice for businesses aiming for a more professional look. With more capacity and complete features, this package supports your daily operations and online communication effectively.",
+        "harga": "1200000",
+        "maintenance": "Maintenance Price 750000",
+        "benefit": {
+          "1": "Free .com Domain",
+          "2": "Responsive Design",
+          "3": "Shared Hosting",
+          "4": "5 Business Emails",
+          "5": "5 GB Storage",
+          "6": "Free SSL",
+          "7": "3x Free Minor Revisions",
+          "8": "Maintenance up to 1.5 months",
+          "9": "CMS Video Tutorial"
+        }
+      },
+      "item3": {
+        "title": "Advanced",
+        "desc": "Designed for businesses that need more performance, capacity, and flexibility. This package supports advanced needs, including custom feature requests and long-term support.",
+        "harga": "2500000",
+        "maintenance": "Maintenance Price 120000",
+        "benefit": {
+          "1": "Free .com Domain",
+          "2": "Responsive Design",
+          "3": "Shared Hosting",
+          "4": "5 Business Emails",
+          "5": "50 GB Storage",
+          "6": "Free SSL",
+          "7": "4x Free Revisions",
+          "8": "Maintenance up to 2 months",
+          "9": "Advanced feature request",
+          "10": "CMS Video Tutorial"
+        }
+      }
+    },
+    "stepOrder": {
+      "title": "Website Development Process",
+      "desc": "No Drama, No Hassle",
+      "one": {
+        "title": "Initial Discussion",
+        "desc": "Share your website needs through the order brief or consult directly with us so we can understand your goals and expectations."
+      },
+      "two": {
+        "title": "Concise Proposal",
+        "desc": "We’ll send you a complete proposal that includes pricing, service details, and design samples for your review and approval."
+      },
+      "three": {
+        "title": "Development Process",
+        "desc": "The website will be developed based on our agreement, with regular progress updates until we reach the first revision-ready version."
+      },
+      "four": {
+        "title": "Revision & Finalization",
+        "desc": "We’ll receive your feedback and make revisions according to the agreed terms to ensure the final result meets your expectations."
+      }
+    },
+    "faq": {
+      "1": {
+        "question": "How long does it take to build a website?",
+        "ans": "The standard process takes 5–10 working days, depending on the complexity and how quickly you provide the required content."
+      },
+      "2": {
+        "question": "Do I need to have technical knowledge?",
+        "ans": "Not at all! We’ll guide you through the entire process—from start to launch. We also provide a user guide for your convenience."
+      },
+      "3": {
+        "question": "Can I request revisions?",
+        "ans": "Yes, you can. The number of revisions depends on the package you choose. Everything is clearly explained upfront for transparency."
+      },
+      "4": {
+        "question": "Are domain and hosting included?",
+        "ans": "Yes, all our packages include both domain and hosting. There's no need to purchase them separately."
+      },
+      "5": {
+        "question": "Will I be able to manage the website myself?",
+        "ans": "Absolutely. Your website will be built using a user-friendly CMS like WordPress, and we provide a tutorial video to help you manage it easily."
+      }
+    }
   }
 }

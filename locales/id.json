@@ -44,7 +44,8 @@
     },
     "button": {
       "moreAbout": "Tentang Saya",
-      "moreProject": "Proyek Lainnya"
+      "moreProject": "Proyek Lainnya",
+      "pricing": "Lihat Harga"
     },
     "projects": {
       "title": "Jelajahi Karya Saya",
@@ -127,6 +128,109 @@
       "email": "Masukkan Email",
       "message": "Tulis pesan Anda",
       "button": "Kirim Pesan"
+    }
+  },
+  "pricing": {
+    "title": "Pilih Paket Situs Web Sesuai Untuk Bisnis Anda",
+    "desc": "Saya membangun situs web yang bersih, cepat, dan dibangun untuk tumbuh bersama bisnis Anda — tanpa biaya tersembunyi atau paket yang membingungkan.",
+    "button": {
+      "btnPackage": "Konsultasi Gratis"
+    },
+    "package": {
+      "item1": {
+        "title": "Starter",
+        "desc": "Cocok untuk UMKM atau personal brand yang baru mulai membangun kehadiran online. Paket ini menawarkan solusi hemat dengan fitur dasar yang cukup untuk memulai website profesional pertamamu.",
+        "harga": "750000",
+        "maintenance": "Harga Maintenance 120000",
+        "benefit": {
+          "1": "Free Domain .com",
+          "2": "Desain Responsif",
+          "3": "Shared Hosting",
+          "4": "1 Email Bisnis",
+          "5": "1 GB Storage",
+          "6": "Free SSL",
+          "7": "2x Revisi Minor Gratis",
+          "8": "Maintenance s/d 1 bulan",
+          "9": "Video Tutorial CMS"
+        }
+      },
+      "item2": {
+        "title": "Standard",
+        "desc": "Pilihan tepat untuk bisnis yang ingin tampil lebih profesional. Dengan kapasitas dan fitur lebih lengkap, paket ini siap mendukung operasional dan komunikasi online bisnismu secara optimal.",
+        "harga": "1200000",
+        "maintenance": "Harga Maintenance 750000",
+        "benefit": {
+          "1": "Free Domain .com",
+          "2": "Desain Responsif",
+          "3": "Shared Hosting",
+          "4": "5 Email Bisnis",
+          "5": "5 GB Storage",
+          "6": "Free SSL",
+          "7": "3x Revisi Minor Gratis",
+          "8": "Maintenance s/d 1,5 bulan",
+          "9": "Video Tutorial CMS"
+        }
+      },
+      "item3": {
+        "title": "Advanced",
+        "desc": "Untuk bisnis yang membutuhkan performa, kapasitas, dan fleksibilitas lebih tinggi. Paket ini dirancang untuk mendukung kebutuhan lanjutan, termasuk permintaan fitur kustom dan dukungan jangka panjang.",
+        "harga": "2500000",
+        "maintenance": "Harga Maintenance 120000",
+        "benefit": {
+          "1": "Free Domain .com",
+          "2": "Desain Responsif",
+          "3": "Shared Hosting",
+          "4": "5 Email Bisnis",
+          "5": "50 GB Storage",
+          "6": "Free SSL",
+          "7": "4x Revisi Gratis",
+          "8": "Maintenance s/d 2 bulan",
+          "9": "Request fitur advanced",
+          "10": "Video Tutorial CMS"
+        }
+      }
+    },
+    "stepOrder": {
+      "title": "Bagaimana Proses Pembuatan Website",
+      "desc": "Gak Pakai Drama, Gak Harus Ribet",
+      "one": {
+        "title": "Diskusi Awal",
+        "desc": "Jelaskan kebutuhan website yang akan dibuat pada brief pemesanan atau konsultasikan kebutuhan dengan saya."
+      },
+      "two": {
+        "title": "Penawaran Ringkas",
+        "desc": "Kami kirimkan penawaran lengkap berisi harga, detail layanan, dan contoh desain untuk disetujui sebelum memulai."
+      },
+      "three": {
+        "title": "Proses Development",
+        "desc": "Website mulai dikerjakan sesuai kesepakatan dengan pembaruan progres secara berkala hingga mencapai versi awal siap revisi."
+      },
+      "four": {
+        "title": "Revisi & Finalisasi",
+        "desc": "Kami menerima masukan Anda dan melakukan revisi sesuai batas yang disepakati untuk memastikan hasil akhir memuaskan."
+      }
+    },
+    "faq": {
+      "1": {
+        "question": "Berapa lama proses pembuatan website?",
+        "ans": "Proses standar memakan waktu 5–10 hari kerja, tergantung kompleksitas dan seberapa cepat konten disiapkan oleh klien."
+      },
+      "2": {
+        "question": "Apakah saya harus paham teknis?",
+        "ans": "Tidak perlu! Kami bantu dari awal hingga website Anda tayang. Kami juga berikan panduan penggunaan."
+      },
+      "3": {
+        "question": "Apakah bisa revisi?",
+        "ans": "Bisa. Jumlah revisi tergantung paket yang dipilih. Semua dijelaskan di awal agar transparan."
+      },
+      "4": {
+        "question": "Apakah sudah termasuk domain dan hosting?",
+        "ans": "Ya, semua paket kami sudah termasuk domain dan hosting. Anda tidak perlu beli terpisah."
+      },
+      "5": {
+        "question": "Apakah saya bisa mengelola website sendiri nanti?",
+        "ans": "Bisa. Website Anda akan menggunakan CMS seperti WordPress yang user-friendly, dan kami berikan video panduan."
+      }
     }
   }
 }

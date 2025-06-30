@@ -32,59 +32,59 @@ export default function Home() {
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 mt-40 mx-10 md:mt-40 md:mx-30">
-        <div className='col-span-1 md:col-span-5 md:row-span-1 py-10 px-20 rounded-[15px] border-2 border-[#191A20]' style={{ background: 'linear-gradient(135deg, #1F2127 0%, #5F399E 98%)' }}>
+        <div className='col-span-1 md:col-span-5 md:row-span-1 px-5 py-10 md:py-10 md:px-20 rounded-[15px] border-2 border-[#191A20]' style={{ background: 'linear-gradient(135deg, #1F2127 0%, #5F399E 98%)' }}>
           <h1 className='font-poppins text-white text-2xl mb-6 md:text-6xl font-bold'>{t('intro.title')}</h1>
           <p className="font-montserrat text-white md:text-xl mt-3 text-[15px]">{t('intro.desc1')}</p>
           <p className="font-montserrat text-white md:text-xl mt-3 text-[15px]">{t('intro.desc2')}</p>
         </div>
         <div className="col-span-1 md:col-span-2 md:row-span-1 md:row-start-2 p-10 bg-[#1F2127] rounded-[15px] md:h-[300px] border-1 border-[#5F399E]">
-            <h1 className='text-4xl font-bold'>{t('cta.title')}</h1>
-            <button onClick={handleCopy} className="bg-[#24283C] rounded-[15px] font-montserrat p-1 h-[60px] mt-5 w-[300px]"><i class="fa-solid fa-copy mx-2"></i>{copied ? "Copied!" : "Copy my Email address"}</button>
+            <h1 className='text-3xl md:text-4xl font-bold'>{t('cta.title')}</h1>
+            <button onClick={handleCopy} className="bg-[#24283C] rounded-[15px] font-montserrat p-1 h-[60px] mt-5 w-[270px] md:w-[300px]"><i class="fa-solid fa-copy mx-2"></i>{copied ? "Copied!" : "Copy my Email address"}</button>
           </div>
         <div className="col-span-1 md:col-span-3 md:row-span-1 md:col-start-3 md:row-start-2 md:h-[300px] bg-[#1F2127] rounded-[15px] border-2 border-[#191A20]">
             <div class="flex justify-center items-center">
               <div className="grid grid-cols-1 gap-2 p-5 w-[400px]">
                 <div className="bg-[#24283C] rounded-[10px] h-auto p-2">
-                  <p className="font-montserrat font-medium">{t('services.items.one')}</p>
+                  <p className="font-montserrat text-[10px] md:text-base font-medium">{t('services.items.one')}</p>
                 </div>
                 <div className="bg-[#24283C] rounded-[10px] h-auto p-2">
-                  <p className="font-montserrat font-medium">{t('services.items.two')}</p>
+                  <p className="font-montserrat text-[10px] md:text-base  font-medium">{t('services.items.two')}</p>
                 </div>
                 <div className="bg-[#24283C] rounded-[10px] h-auto p-2">
-                  <p className="font-montserrat font-medium">{t('services.items.three')}</p>
+                  <p className="font-montserrat text-[10px] md:text-base  font-medium">{t('services.items.three')}</p>
                 </div>
                 <div className="bg-[#24283C] rounded-[10px] h-auto p-2">
-                  <p className="font-montserrat font-medium">{t('services.items.four')}</p>
+                  <p className="font-montserrat text-[10px] md:text-base  font-medium">{t('services.items.four')}</p>
                 </div>
                 <div className="bg-[#24283C] rounded-[10px] h-auto p-2">
-                  <p className="font-montserrat font-medium">{t('services.items.more')}</p>
+                  <p className="font-montserrat text-[10px] md:text-base font-medium">{t('services.items.more')}</p>
                 </div>
               </div>
               <div className="my-auto items-center p-3">
-                <h1 className="font-poppins text-white text-2xl md:text-2xl font-bold">{t('services.title')}</h1>
-                <p className="font-montserrat text-white md:text-base mt-3 text-[15px]">{t('services.desc')}</p>
+                <h1 className="font-poppins text-white text-base md:text-2xl font-bold">{t('services.title')}</h1>
+                <p className="font-montserrat text-white text-xs md:text-base mt-3">{t('services.desc')}</p>
               </div>
             </div>
           </div>
-        <div className="col-span-1 md:-mt-12 md:col-span-5 md:row-start-3 bg-[#1F2127] rounded-[15px] border-2 border-[#191A20] px-5 md:px-10">
+        <div className="col-span-1 md:-mt-8 md:col-span-5 md:row-start-3 bg-[#1F2127] rounded-[15px] border-2 border-[#191A20] px-5 md:px-10">
           <div className='my-6 mx-3 flex justify-between items-center'>
             <h1 className='font-poppins text-white text-2xl md:text-2xl font-bold'>{t('whyme.title')}</h1>
-            <Link href="/pricing" className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] h-[55px] w-[200px]">{t('button.moreProject')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
+            <Link href="/pricing" className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] h-[55px] w-[200px]">{t('button.pricing')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
           </div>
-          <div className='grid grid-cols-2 justify-center gap-3 md:gap-0 pb-2 md:grid-cols-4'>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-[200px] md:w-[230px]'>
+          <div className='grid grid-cols-1 justify-center gap-3 md:gap-0 pb-2 md:grid-cols-4'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item1.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item1.desc')}</p>
             </div>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-[200px] md:w-[230px]'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item2.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item2.desc')}</p>
             </div>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-[200px] md:w-[230px]'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item3.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item3.desc')}</p>
             </div>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-[200px] md:w-[230px]'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item4.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item4.desc')}</p>
             </div>

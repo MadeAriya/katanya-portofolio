@@ -42,12 +42,13 @@ export default async function LocaleLayout({ children, params }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
         <link rel="icon" href="/images/favicon.jpg" type="image/jpg" />
+        
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ScrollToTopButton/>
-          <div className="absolute"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
-          <div className="absolute top-50 right-0 scale-x-[-1]"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
+          <div className="absolute opacity-50"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
+          <div className="absolute top-50 right-0 opacity-50 scale-x-[-1]"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
           <div className="absolute w-full h-screen opacity-10">
             <div className="relative w-full h-full">
               <Image
