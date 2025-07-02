@@ -89,12 +89,14 @@ export default function Contact(){
                             <h1 className='font-montseerrat font-extrabold text-[32px]'>{t('form.title')}</h1>
                             <form onSubmit={handleSubmit} className='mt-10 grid'>
                                 <div className='grid grid-cols-1 md:grid-cols-2'>
-                                    <input type='text' name='name' placeholder={t('form.name')} value={formData.name} onChange={handleChange} required className='bg-[#38383C] md:w-[430px] h-[56px] rounded-[15px] p-2'/>
-                                    <input type='email' name='email' placeholder={t('form.email')} value={formData.email} onChange={handleChange} required className='bg-[#38383C] md:w-[300px] h-[56px] rounded-[15px] p-2 mt-3 md:mt-0'/>
+                                    <input type='text' name='name' placeholder={t('form.name')} value={formData.name} onChange={handleChange} required className='bg-[#38383C] h-[56px] rounded-[15px] p-2 w-full'/>
+                                    <input type='email' name='email' placeholder={t('form.email')} value={formData.email} onChange={handleChange} required className='bg-[#38383C] h-[56px] rounded-[15px] p-2 mt-3 md:mt-0 w-full'/>
                                 </div>
-                                <textarea name='message' placeholder={t('form.message')} value={formData.message} onChange={handleChange} required className='bg-[#38383C] w-auto md:w-[780px] h-[300px] rounded-[15px] p-2 mt-5 resize-none'></textarea>
+                                <textarea name='message' placeholder={t('form.message')} value={formData.message} onChange={handleChange} required className='bg-[#38383C] w-full h-[300px] rounded-[15px] p-2 mt-5 resize-none'></textarea>
 
-                                <button type='submit' className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] mt-5 h-[55px] w-[200px]">{t('form.button')}</button>
+                                <button type='submit' className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] mt-5 h-[55px] w-full max-w-[200px] mx-auto md:mx-0">
+                                    {t('form.button')}
+                                </button>
                             </form>
                             <p>{status}</p>
                         </section>

@@ -61,19 +61,19 @@ export default function Pricing(){
         <h1 className='font-poppins text-2xl z-30 font-bold md:text-5xl'>{t('title')}</h1>
         <p className='font-poppins text-base z-30 md:text-lg'>{t('desc')}</p>
       </div>
-      <section className='flex justify-center'>
+      <section className='flex justify-center px-4'>
         <Carousel
       opts={{
         align: "start",
       }}
-      className="lg:w-[1200px] md:w-[700px] max-w-sm md:max-w-none lg:max-w-none"
+      className="w-full max-w-sm md:max-w-2xl lg:max-w-6xl"
     >
       <CarouselContent className='w-full'>
         {carouselItems.map((item, index) => (
-          <CarouselItem key={index} className="md:basis-1/2 md:w-[400px] lg:basis-1/3">
+          <CarouselItem key={index} className="basis-full md:basis-1/2 lg:basis-1/3">
             <div className="p-1">
               <Card className="border-1 border-[#595959] bg-[#1F2127] text-white">
-                <CardContent className="font-montserrat">
+                <CardContent className="font-montserrat p-6">
                   <h1 className='text-4xl'>{item.title}</h1>
                   <p className='text-sm my-5'>{item.desc}</p>
                   <div className='flex '>
@@ -81,10 +81,10 @@ export default function Pricing(){
                     <p className='text-4xl ml-1'>{item.harga}</p>
                   </div>
                   <p className='text-sm'>{item.maintenance}</p>
-                  <div className='mt-[5px] mx-2 p-2 w-[300px]'>
-                    <a href="https://wa.me/6289685660190" className='block text-lg font-semibold text-center text-white rounded-[5px] w-[250px] p-4 bg-[#673DE6]'>{t('button.btnPackage')}</a>
+                  <div className='mt-5 flex justify-center'>
+                    <a href="https://wa.me/6289685660190" className='block text-lg font-semibold text-center text-white rounded-md px-6 py-3 bg-[#673DE6]'>{t('button.btnPackage')}</a>
                   </div>
-                  <ul className="list-disc list-inside text-sm">
+                  <ul className="list-disc list-inside text-sm mt-5 space-y-2">
                     {item.benefit.map((benefit, i) => (
                       <li key={i}>{benefit}</li>
                     ))}
@@ -93,17 +93,13 @@ export default function Pricing(){
               </Card>
             </div>
           </CarouselItem>
-        ))}
+        ))}"
       </CarouselContent>
 
       <div className="mt-4 flex justify-center gap-4 md:hidden">
-        <CarouselPrevious className="static relative" />
-        <CarouselNext className="static relative" />
+        <CarouselPrevious className="static" />
+        <CarouselNext className="static" />
       </div>
-
-      {/* Tombol default untuk desktop */}
-      <CarouselPrevious className="hidden md:flex" />
-      <CarouselNext className="hidden md:flex" />
     </Carousel>
       </section>
 

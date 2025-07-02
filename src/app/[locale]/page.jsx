@@ -31,15 +31,15 @@ export default function Home() {
         <LottieScroll/>
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-5 md:grid-rows-4 gap-4 mt-40 mx-10 md:mt-40 md:mx-30">
+      <section className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-40 mx-10 md:mt-40 md:mx-30">
         <div className='col-span-1 md:col-span-5 md:row-span-1 px-5 py-10 md:py-10 md:px-20 rounded-[15px] border-2 border-[#191A20]' style={{ background: 'linear-gradient(135deg, #1F2127 0%, #5F399E 98%)' }}>
           <h1 className='font-poppins text-white text-2xl mb-6 md:text-6xl font-bold'>{t('intro.title')}</h1>
           <p className="font-montserrat text-white md:text-xl mt-3 text-[15px]">{t('intro.desc1')}</p>
           <p className="font-montserrat text-white md:text-xl mt-3 text-[15px]">{t('intro.desc2')}</p>
         </div>
-        <div className="col-span-1 md:col-span-2 md:row-span-1 md:row-start-2 p-10 bg-[#1F2127] rounded-[15px] md:h-[300px] border-1 border-[#5F399E]">
+        <div className="col-span-1 md:col-span-2 md:row-span-1 md:row-start-2 p-10 bg-[#1F2127] rounded-[15px] md:h-[300px] border-1 border-[#5F399E] flex flex-col items-center text-center md:items-start md:text-left">
             <h1 className='text-3xl md:text-4xl font-bold'>{t('cta.title')}</h1>
-            <button onClick={handleCopy} className="bg-[#24283C] rounded-[15px] font-montserrat p-1 h-[60px] mt-5 w-[270px] md:w-[300px]"><i class="fa-solid fa-copy mx-2"></i>{copied ? "Copied!" : "Copy my Email address"}</button>
+            <button onClick={handleCopy} className="bg-[#24283C] rounded-[15px] font-montserrat p-1 h-[60px] mt-5 w-full max-w-[270px]"><i class="fa-solid fa-copy mx-2"></i>{copied ? "Copied!" : "Copy my Email address"}</button>
           </div>
         <div className="col-span-1 md:col-span-3 md:row-span-1 md:col-start-3 md:row-start-2 md:h-[300px] bg-[#1F2127] rounded-[15px] border-2 border-[#191A20]">
             <div class="flex justify-center items-center">
@@ -66,25 +66,25 @@ export default function Home() {
               </div>
             </div>
           </div>
-        <div className="col-span-1 md:-mt-8 md:col-span-5 md:row-start-3 bg-[#1F2127] rounded-[15px] border-2 border-[#191A20] px-5 md:px-10">
-          <div className='my-6 mx-3 flex justify-between items-center'>
-            <h1 className='font-poppins text-white text-2xl md:text-2xl font-bold'>{t('whyme.title')}</h1>
-            <Link href="/pricing" className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] h-[55px] w-[200px]">{t('button.pricing')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
+        <div className="col-span-1 md:col-span-5 bg-[#1F2127] rounded-[15px] border-2 border-[#191A20] px-5 md:px-10">
+          <div className='my-6 mx-3 flex flex-col md:flex-row justify-between items-center gap-4'>
+            <h1 className='font-poppins text-white text-2xl md:text-2xl font-bold text-center md:text-left'>{t('whyme.title')}</h1>
+            <Link href="/pricing" className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] h-[55px] w-full md:w-[200px]">{t('button.pricing')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
           </div>
-          <div className='grid grid-cols-1 justify-center gap-3 md:gap-0 pb-2 md:grid-cols-4'>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-3 pb-2'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item1.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item1.desc')}</p>
             </div>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item2.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item2.desc')}</p>
             </div>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item3.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item3.desc')}</p>
             </div>
-            <div className='bg-[#24283C] rounded-[10px] p-3 w-full md:w-[230px]'>
+            <div className='bg-[#24283C] rounded-[10px] p-3 w-full'>
               <h5 className='font-poppins text-white md:text-xl mt-3 text-[15px]'>{t('whyme.items.item4.title')}</h5>
               <p className='font-montserrat text-white md:text-base mt-3 text-[15px]'>{t('whyme.items.item4.desc')}</p>
             </div>
@@ -95,7 +95,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="mt-20">
+      <div className="mt-15">
         <Image src="/images/mask.png" alt="" width={1400} height={700}/>
       </div>
 

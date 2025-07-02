@@ -19,8 +19,8 @@ const techIcons = {
 export default function ImageHoverView({ src, alt, width, height, href, title, description, techStack }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-      <div className='relative p-5 h-[auto] w-auto bg-[#38383C] border-1 border-[#464649] rounded-xl'>
-        <Image src={src} alt={alt} width={width} height={height} className="rounded-xl z-10"/>
+      <div className='relative p-5 h-[auto] w-full bg-[#38383C] border-1 border-[#464649] rounded-xl'>
+        <Image src={src} alt={alt} width={width} height={height} className="rounded-xl z-10 w-full h-auto"/>
         <div className='mt-3'>
           <h1 className='font-montserrat font-bold text-xl'>{title}</h1>
           <p className="font-montserrat">{description}</p>

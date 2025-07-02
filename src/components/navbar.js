@@ -57,19 +57,19 @@ export default function Navbar(){
             >
               <i className="fa-solid fa-circle-xmark text-black text-5xl p-5"></i>
             </button>
-            <li className="font-montserrat font-bold text-5xl text-black">
+            <li className="font-montserrat font-bold text-3xl md:text-5xl text-black">
               <Link href={`/${locale}`} className={pathname == `/${locale}` ? 'text-blue-500' : ''}>Home</Link>
             </li>
-            <li className="font-montserrat font-bold text-5xl text-black">
+            <li className="font-montserrat font-bold text-3xl md:text-5xl text-black">
               <Link href={`/${locale}/about`} className={pathname == `/${locale}/about` ? 'text-blue-500' : ''}>About Me</Link>
             </li>
-            <li className="font-montserrat font-bold text-5xl text-black">
+            <li className="font-montserrat font-bold text-3xl md:text-5xl text-black">
               <Link href={`/${locale}/project`} className={pathname == `/${locale}/project` ? 'text-blue-500' : ''}>Project</Link>
             </li>
-            <li className="font-montserrat font-bold text-5xl text-black">
+            <li className="font-montserrat font-bold text-3xl md:text-5xl text-black">
               <Link href={`/${locale}/contact`} className={pathname == `/${locale}/contact` ? 'text-blue-500' : ''}>Contact</Link>
             </li>
-            <li className="font-montserrat font-bold text-5xl text-black">
+            <li className="font-montserrat font-bold text-3xl md:text-5xl text-black">
               <Link href={`/${locale}/pricing`} className={pathname == `/${locale}/pricing` ? 'text-blue-500' : ''}>Plan & Pricing</Link>
             </li>
             <div className="absolute bottom-4 left-0 w-full px-6 flex justify-between items-center">
