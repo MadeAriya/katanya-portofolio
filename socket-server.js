@@ -8,7 +8,8 @@ const redisClient = createClient({
 
 redisClient.on('error', (err) => console.log('Redis Client Error', err));
 
-const io = new Server(3001, {
+const PORT = process.env.PORT || 3001;
+const io = new Server(PORT, {
   cors: {
     origin: "*",
   },

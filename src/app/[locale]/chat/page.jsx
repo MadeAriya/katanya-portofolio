@@ -7,7 +7,7 @@ import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { ScrollArea } from "@/components/ui/scroll-area"
 
-const socket = io("http://localhost:3001");
+const socket = io(process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "http://localhost:3001");
 
 export default function Chat() {
   const [name, setName] = useState("");
