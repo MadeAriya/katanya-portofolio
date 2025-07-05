@@ -2,7 +2,7 @@
 import Navbar from "@/components/navbar";
 import Cta from "@/components/cta";
 import Footer from "@/components/footer";
-import LottieScroll from "@/components/LottieScroll";
+import LottieScrollWrapper from "@/components/LottieScroll";
 import ImageHover from "@/components/projectCard";
 import Link from 'next/link';
 import Image from "next/image";
@@ -28,7 +28,7 @@ export default function Home() {
         <h6 className="font-montserrat font-extrabold text-xs md:text-sm text-white">{t('hero.tagline')}</h6>
         <h1 className="font-montserrat font-extrabold text-center md:text-left text-5xl md:text-7xl text-white md:w-[750px]">Website Developer & <span className="text-[#B9A1E0]">Tech Enthusiast</span> </h1> 
         <p className="font-montserrat text-sm md:p-5 md:text-xl text-center md:w-[650px] text-white">{ t('hero.desc') }</p>
-        <LottieScroll/>
+        <LottieScrollWrapper/>
       </section>
 
       <section className="grid grid-cols-1 md:grid-cols-5 gap-4 mt-40 mx-10 md:mt-40 md:mx-30">

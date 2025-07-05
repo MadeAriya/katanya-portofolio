@@ -87,6 +87,17 @@ export default function Project(){
                                 description={t('items.redhillsvilla.desc')}
                                 techStack={["Wordpress"]}
                                 />
+
+								<ImageHover
+                                src="/images/wedding-invitation.png"
+                                alt="Wedding Invitation"
+                                width="600"
+                                height="600"
+                                href=""
+                                title="Wedding Invitation"
+                                description={t('items.weddingInvitation.desc')}
+                                techStack={["Wordpress"]}
+                                />
                             </div>
                 </section>
                 <Cta/>

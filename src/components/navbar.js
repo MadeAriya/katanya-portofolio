@@ -23,6 +23,10 @@ export default function Navbar(){
                 <p className='font-island text-4xl'>Ariya</p>
             </div>
             <div className="flex justify-end gap-3 text-white text-sm">
+            <span className='flex my-auto mx-2 font-montserrat bg-[#8F57EA] rounded-sm p-2'>
+              <i className="fa-solid fa-comments mr-1"></i>
+              <Link href={`/${locale}/chat`}>Chat</Link>
+            </span>
             <button id="hamburger" name="hamburger" type="button" className='' onClick={toggleMenu}>
                 <span className='w-[43px] h-[5px] my-1 block bg-white rounded-[5px]'></span>
                 <span className='w-[43px] h-[5px] my-1 block bg-white rounded-[5px]'></span>
