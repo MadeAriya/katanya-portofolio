@@ -82,7 +82,7 @@ export default function Pricing(){
                   </div>
                   <p className='text-sm'>{item.maintenance}</p>
                   <div className='mt-5 flex justify-center'>
-                    <a href="https://wa.me/6289685660190" className='block text-lg font-semibold text-center text-white rounded-md px-6 py-3 bg-[#673DE6]'>{t('button.btnPackage')}</a>
+                    <a href="https://wa.me/6287767498982" className='block text-lg font-semibold text-center text-white rounded-md px-6 py-3 bg-[#673DE6]'>{t('button.btnPackage')}</a>
                   </div>
                   <ul className="list-disc list-inside text-sm mt-5 space-y-2">
                     {item.benefit.map((benefit, i) => (
