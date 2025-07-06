@@ -1,0 +1,23 @@
+modules = ["nodejs"]
+
+[nix]
+channel = "stable-23_11"
+
+[deployment]
+run = ["pnpm", "install", "&&", "pnpm", "start"]
+
+[languages]
+
+[languages.javascript]
+pattern = "**/{*.js,*.jsx,*.ts,*.tsx}"
+
+[languages.javascript.languageServer]
+start = "npx @replit/languagetool-node"
+
+[tools]
+
+[tools.nodejs]
+package = "nodejs-18_x"
+
+[tools.pnpm]
+package = "pnpm"
