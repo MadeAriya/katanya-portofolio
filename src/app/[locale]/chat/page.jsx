@@ -1,13 +1,11 @@
 "use client";
-"use client";
 import { useEffect, useState } from "react";
-import io from "socket.io-client";
+import { db } from "@/lib/firebase";
+import { collection, addDoc, onSnapshot, query, orderBy, serverTimestamp } from "firebase/firestore";
 import Cta from "@/components/cta";
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
-import { ScrollArea } from "@/components/ui/scroll-area"
-
-const socket = io(process.env.NEXT_PUBLIC_SOCKET_SERVER_URL || "http://localhost:3001");
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Chat() {
   const [name, setName] = useState("");
@@ -23,24 +21,21 @@ export default function Chat() {
     } else {
       setNameSet(false);
     }
+  }, []);
 
-    socket.on("history", (history) => {
-      setMessages(history);
-    });
+  useEffect(() => {
+    if (nameSet) {
+      const q = query(collection(db, "messages"), orderBy("timestamp"));
+      const unsubscribe = onSnapshot(q, (querySnapshot) => {
+        const messages = [];
+        querySnapshot.forEach((doc) => {
+          messages.push({ id: doc.id, ...doc.data() });
+        });
+        setMessages(messages);
+      });
 
-    socket.on("message", (msg) => {
-      setMessages((prevMessages) => [...prevMessages, msg]);
-    });
-
-    socket.on("chat_cleared", () => {
-      setMessages([]);
-    });
-
-    return () => {
-      socket.off("history");
-      socket.off("message");
-      socket.off("chat_cleared");
-    };
+      return () => unsubscribe();
+    }
   }, [nameSet]);
 
   const handleNameSubmit = (e) => {
@@ -51,11 +46,19 @@ export default function Chat() {
     }
   };
 
-  const sendMessage = (e) => {
+  const sendMessage = async (e) => {
     e.preventDefault();
     if (message && name) {
-      socket.emit("message", { name, message });
-      setMessage("");
+      try {
+        await addDoc(collection(db, "messages"), {
+          name,
+          message,
+          timestamp: serverTimestamp(),
+        });
+        setMessage("");
+      } catch (error) {
+        console.error("Error sending message: ", error);
+      }
     }
   };
 
@@ -105,8 +108,8 @@ export default function Chat() {
         </div>
         <div className='chat-section bg-[#1F2127] h-[80vh] md:h-[90vh] p-4 z-[99]'>
           <ScrollArea className='h-[calc(80vh-80px)] md:h-[calc(90vh-80px)] max-w-full rounded-md'>
-            {messages.map((msg, index) => (
-              <div key={index} className={`p-3 my-2 rounded-lg max-w-xs ${index % 2 === 0 ? 'bg-primary text-primary-foreground self-end' : 'bg-secondary text-secondary-foreground self-start'}`}>
+            {messages.map((msg) => (
+              <div key={msg.id} className={`p-3 my-2 rounded-lg max-w-xs ${msg.name === name ? 'bg-primary text-primary-foreground self-end' : 'bg-secondary text-secondary-foreground self-start'}`}>
                 <strong>{msg.name}:</strong> {msg.message}
               </div>
             ))}

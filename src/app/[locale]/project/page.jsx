@@ -98,6 +98,18 @@ export default function Project(){
                                 description={t('items.weddingInvitation.desc')}
                                 techStack={["Wordpress"]}
                                 />
+
+								<ImageHover
+                                src="/images/jelajah-bali.png"
+                                alt="Jelajah Bali"
+                                width="600"
+                                height="600"
+                                href=""
+                                title="Jelaajah Bali"
+                                galleryImages={["/images/jelajahbali-1.png", "/images/jelajahbali-2.png", "/images/jelajahbali-3.png"]}
+                                description={t('items.weddingInvitation.desc')}
+                                techStack={["Wordpress"]}
+                                />
                             </div>
                 </section>
                 <Cta/>
