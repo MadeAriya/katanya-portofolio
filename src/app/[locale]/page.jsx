@@ -8,7 +8,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import { useTranslations } from 'next-intl';
 import { useState } from "react";
-
+import { useLocale } from 'next-intl';
 
 export default function Home() {
   const t = useTranslations('home');
@@ -20,6 +20,9 @@ export default function Home() {
     setCopied(true);
     setTimeout(() => setCopied(false), 2000)
   }
+
+  const locale = useLocale();
+
   return (
     <main className="relative z-30">
       <Navbar/>
@@ -69,7 +72,7 @@ export default function Home() {
         <div className="col-span-1 md:col-span-5 bg-[#1F2127] rounded-[15px] border-2 border-[#191A20] px-5 md:px-10">
           <div className='my-6 mx-3 flex flex-col md:flex-row justify-between items-center gap-4'>
             <h1 className='font-poppins text-white text-2xl md:text-2xl font-bold text-center md:text-left'>{t('whyme.title')}</h1>
-            <Link href="/pricing" className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] h-[55px] w-full md:w-[200px]">{t('button.pricing')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
+            <Link href={`/${locale}/pricing`} className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] h-[55px] w-full md:w-auto px-2">{t('button.pricing')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
           </div>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center gap-3 pb-2'>
             <div className='bg-[#24283C] rounded-[10px] p-3 w-full'>
@@ -127,7 +130,7 @@ export default function Home() {
           </div>
 
           <div className='mx-auto'>
-            <Link href="/project" className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] mt-5 h-[55px] w-[200px]">{t('button.moreProject')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
+            <Link href={`/${locale}/project`} className="flex justify-center items-center border-2 border-[#333336] bg-[linear-gradient(to_right,#6971A266_20%,#1D1D1F_100%)] rounded-[14px] mt-5 h-[55px] w-[200px]">{t('button.moreProject')}<Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-3"/></Link>    
           </div>
         </section>
         <Cta/>

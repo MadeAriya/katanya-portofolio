@@ -20,12 +20,12 @@ export default function Navbar(){
     return(
         <nav className="relative z-999 flex justify-between p-5 md:mx-25">
             <div>
-                <p className='font-island text-4xl'>Ariya</p>
+                <p className='font-island text-4xl'>Ayak Dev</p>
             </div>
             <div className="flex justify-end gap-3 text-white text-sm">
             <span className='flex my-auto mx-2 font-montserrat bg-[#8F57EA] rounded-sm p-2'>
               <i className="fa-solid fa-comments mr-1"></i>
-              <Link href={`/${locale}/chat`}>Chat</Link>
+              <Link href={`/${locale}/chat`}> Chat Room</Link>
             </span>
             <button id="hamburger" name="hamburger" type="button" className='' onClick={toggleMenu}>
                 <span className='w-[43px] h-[5px] my-1 block bg-white rounded-[5px]'></span>
@@ -77,7 +77,7 @@ export default function Navbar(){
               <Link href={`/${locale}/pricing`} className={pathname == `/${locale}/pricing` ? 'text-blue-500' : ''}>Plan & Pricing</Link>
             </li>
             <div className="absolute bottom-4 left-0 w-full px-6 flex justify-between items-center">
-                <p className="text-black text-sm">Design & Develop by Ariya</p>
+                <p className="text-black text-sm">Design & Develop by Ayak Dev</p>
                 <div className="space-x-4">
                     <a href="https://www.linkedin.com/in/i-made-ariya-putra"><i className="fa-brands fa-linkedin-in text-black"></i></a>
                     <a href="https://github.com/MadeAriya"><i className="fa-brands fa-github text-black"></i></a>

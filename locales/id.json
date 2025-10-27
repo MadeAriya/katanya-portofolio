@@ -16,7 +16,7 @@
       "items": {
         "one": "UMKM",
         "two": "Fotografi",
-        "three": "Pendidikan",
+        "three": "Travel",
         "four": "Landing Page",
         "more": "Dan Lainnya.."
       }
@@ -25,27 +25,27 @@
       "title": "Kenapa Memilih Saya?",
       "items": {
         "item1": {
-          "title": "Harga Terjangkau",
-          "desc": "Saya menawarkan jasa pembuatan website dengan kualitas profesional namun tetap ramah di kantong, cocok untuk bisnis dan personal."
+          "title": "Paket Lengkap, Terima Beres",
+          "desc": "Semua kebutuhan website Anda dalam satu layanan, mulai dari desain, pengembangan, optimasi, hingga dukungan setelah website live."
         },
         "item2": {
-          "title": "Desain Modern & Responsif",
-          "desc": "Desain yang responsif, menarik, dan disesuaikan dengan karakter brand Anda."
+          "title": "Free Copywriting",
+          "desc": "Kami bantu menulis konten menarik dan relevan agar pesan bisnis Anda tersampaikan dengan jelas dan efektif."
         },
         "item3": {
-          "title": "Paket Lengkap",
-          "desc": "Semua kebutuhan website Anda dalam satu layanan — mulai dari desain, pengembangan, optimasi, hingga dukungan setelah website live."
+          "title": "Full Support",
+          "desc": "Tim kami siap mendampingi Anda di setiap tahap, mulai dari perencanaan hingga website siap digunakan tanpa kendala."
         },
         "item4": {
-          "title": "Fokus pada Klien",
-          "desc": "Saya mengutamakan pemahaman terhadap visi dan tujuan Anda, agar hasil akhir benar-benar mencerminkan brand Anda."
+          "title": "Biaya yang Terjangkau",
+          "desc": "Dapatkan website profesional dengan harga yang fleksibel dan kompetitif tanpa mengorbankan kualitas maupun hasil akhir."
         }
       }
     },
     "button": {
       "moreAbout": "Tentang Saya",
       "moreProject": "Proyek Lainnya",
-      "pricing": "Lihat Harga"
+      "pricing": "Lihat Kenapa Client Memilih Saya"
     },
     "projects": {
       "title": "Jelajahi Karya Saya",
@@ -134,7 +134,7 @@
     }
   },
   "pricing": {
-    "title": "Pilih Paket Situs Web Sesuai Untuk Bisnis Anda",
+    "title": "Naikkan Omset & Profesionalisme Bisnismu Lewat Website yang Kerja 24/7",
     "desc": "Saya membangun situs web yang bersih, cepat, dan dibangun untuk tumbuh bersama bisnis Anda — tanpa biaya tersembunyi atau paket yang membingungkan.",
     "button": {
       "btnPackage": "Konsultasi Gratis"
@@ -142,54 +142,50 @@
     "package": {
       "item1": {
         "title": "Starter",
-        "desc": "Cocok untuk UMKM atau personal brand yang baru mulai membangun kehadiran online. Paket ini menawarkan solusi hemat dengan fitur dasar yang cukup untuk memulai website profesional pertamamu.",
-        "harga": "750000",
-        "maintenance": "Harga Maintenance 120000",
+        "desc": "Paket dasar untuk bisnis baru yang ingin punya landing page profesional dengan harga hemat.",
+        "harga": "950.000",
         "benefit": {
-          "1": "Free Domain .com",
-          "2": "Desain Responsif",
-          "3": "Shared Hosting",
-          "4": "1 Email Bisnis",
-          "5": "1 GB Storage",
-          "6": "Free SSL",
-          "7": "2x Revisi Minor Gratis",
-          "8": "Maintenance s/d 1 bulan",
-          "9": "Video Tutorial CMS"
+          "1": "Free Domain (.com)",
+          "2": "Shared Hosting (6 Bulan)",
+          "3": "Desain Responsif (Mobile & Desktop)",
+          "4": "1 Halaman Landing Page (scroll panjang)",
+          "5": "1 Email Bisnis",
+          "6": "1 GB Disk Storage",
+          "7": "Free SSL",
+          "8": "1x Revisi Gratis",
+          "9": "Garansi Maintenance 15 Hari",
+          "10": "Video Panduan Akses Website"
         }
       },
       "item2": {
-        "title": "Standard",
-        "desc": "Pilihan tepat untuk bisnis yang ingin tampil lebih profesional. Dengan kapasitas dan fitur lebih lengkap, paket ini siap mendukung operasional dan komunikasi online bisnismu secara optimal.",
-        "harga": "1200000",
-        "maintenance": "Harga Maintenance 750000",
+        "title": "Growth",
+        "desc": "Paket profesional untuk bisnis yang ingin tampilan lebih kompleks dan fitur lengkap.",
+        "harga": "1.850.000",
         "benefit": {
-          "1": "Free Domain .com",
-          "2": "Desain Responsif",
-          "3": "Shared Hosting",
-          "4": "5 Email Bisnis",
-          "5": "5 GB Storage",
-          "6": "Free SSL",
-          "7": "3x Revisi Minor Gratis",
-          "8": "Maintenance s/d 1,5 bulan",
-          "9": "Video Tutorial CMS"
+          "1": "Semua fitur di Starter",
+          "2": "Hosting 1 Tahun",
+          "3": "Desain Visual Lebih Kompleks (CTA, Form, Galeri)",
+          "4": "Direct WhatsApp Chat",
+          "5": "2 Email Bisnis",
+          "6": "10 GB Disk Storage",
+          "7": "3x Revisi Gratis",
+          "8": "Free SSL",
+          "9": "SEO On-Page Basic",
+          "10": "Garansi Maintenance 1 Bulan"
         }
       },
       "item3": {
-        "title": "Advanced",
-        "desc": "Untuk bisnis yang membutuhkan performa, kapasitas, dan fleksibilitas lebih tinggi. Paket ini dirancang untuk mendukung kebutuhan lanjutan, termasuk permintaan fitur kustom dan dukungan jangka panjang.",
-        "harga": "2500000",
-        "maintenance": "Harga Maintenance 120000",
+        "title": "Ultimate",
+        "desc": "Paket premium dengan desain interaktif dan fitur lengkap untuk hasil maksimal.",
+        "harga": "2.850.000",
         "benefit": {
-          "1": "Free Domain .com",
-          "2": "Desain Responsif",
-          "3": "Shared Hosting",
-          "4": "5 Email Bisnis",
-          "5": "50 GB Storage",
-          "6": "Free SSL",
-          "7": "4x Revisi Gratis",
-          "8": "Maintenance s/d 2 bulan",
-          "9": "Request fitur advanced",
-          "10": "Video Tutorial CMS"
+          "1": "Semua fitur di Growth",
+          "2": "Up to 2 Halaman Tambahan (About / FAQ / Blog Preview)",
+          "3": "Request Fitur Khusus (Popup, Accordion, Pricing Table, dll)",
+          "4": "Desain Interaktif (Animated Scroll, Parallax, dll)",
+          "5": "Speed Optimization (Lazy Load + Caching Tools)",
+          "6": "5x Revisi Gratis",
+          "7": "Garansi Maintenance 1,5 Bulan"
         }
       }
     },
@@ -233,6 +229,15 @@
       "5": {
         "question": "Apakah saya bisa mengelola website sendiri nanti?",
         "ans": "Bisa. Website Anda akan menggunakan CMS seperti WordPress yang user-friendly, dan kami berikan video panduan."
+      }
+    },
+    "after_sales": {
+      "title": "Bonus & After Sales",
+      "subtitle": "Website selesai bukan berarti hubungan kita selesai juga. Saya tetap dampingi kamu biar gak bingung setelahnya.",
+      "points": {
+        "1": "Video panduan lengkap – cara edit halaman, ganti foto, update produk/layanan, semua dijelaskan step by step.",
+        "2": "Panduan 24/7 – bisa diputar ulang kapan saja kalau lupa.",
+        "3": "Support ringan pasca proyek – kalau ada kendala kecil, saya tetap siap bantu."
       }
     }
   }

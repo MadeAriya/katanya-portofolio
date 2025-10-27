@@ -2,16 +2,16 @@ import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
-import { poppins, montserrat, island } from '@/app/fonts/font'
+import { poppins, montserrat, island, inter } from '@/app/fonts/font'
 import ScrollToTopButton from "@/components/scrollToTop";
 import BottomLeftGlow from "@/components/glowEffect";
 import  Image  from 'next/image';
 
 export const metadata = {
-  title: "Ariya Portofolio",
+  title: "Ayak Dev Portfolio",
   description: "Ariya Portofolio | Web Developer | Tech Enthusiast",
   icons: {
-    icon: '/images/favicon.jpg'
+    icon: '/images/faviconn.ico'
   }
 };
 
@@ -35,7 +35,7 @@ export default async function LocaleLayout({ children, params }) {
   setRequestLocale(locale);
 
   return (
-    <html lang={locale} className={`${poppins.variable} ${montserrat.variable} ${island.variable}`}>
+    <html lang={locale} className={`${poppins.variable} ${montserrat.variable} ${inter.variable} ${island.variable}`}>
       <head>
         <link
           rel="stylesheet"
