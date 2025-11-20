@@ -144,3 +144,53 @@ body {
   background: var(--background);
   color: var(--foreground);
 }
+
+.mouse-glow {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(185, 161, 224, 0.2) 0%, rgba(185, 161, 224, 0) 70%);
+  filter: blur(50px);
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+}
+
+.certificate-hover {
+  transition: all 0.3s ease;
+}
+
+.certificate-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.social-link-hover {
+  transition: all 0.3s ease;
+}
+
+.social-link-hover:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
+.form-input-focus:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(185, 161, 224, 0.5);
+  border-color: rgba(185, 161, 224, 0.8);
+}
+
+.pricing-card-hover {
+  transition: all 0.3s ease;
+}
+
+.pricing-card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card-hover.recommended {
+  box-shadow: 0 0 30px rgba(185, 161, 224, 0.5);
+}

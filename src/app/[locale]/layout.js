@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { poppins, montserrat, island, inter } from '@/app/fonts/font'
 import ScrollToTopButton from "@/components/scrollToTop";
-import BottomLeftGlow from "@/components/glowEffect";
+import MouseGlow from '@/components/MouseGlow';
 import  Image  from 'next/image';
 
 export const metadata = {
@@ -46,6 +46,7 @@ export default async function LocaleLayout({ children, params }) {
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <MouseGlow />
           <ScrollToTopButton/>
           <div className="absolute opacity-50"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
           <div className="absolute top-50 right-0 opacity-50 scale-x-[-1]"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>

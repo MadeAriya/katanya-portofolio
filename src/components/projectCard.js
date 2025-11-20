@@ -19,6 +19,7 @@ const techIcons = {
 export default function ImageHoverView({ src, galleryImages, alt, width, height, href, title, description, techStack }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const openModal = () => {
     setCurrentImageIndex(0);
@@ -36,16 +37,29 @@ export default function ImageHoverView({ src, galleryImages, alt, width, height,
     setCurrentImageIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  const toggleDescription = () => {
+    setIsExpanded(!isExpanded);
+  };
+
+  const descriptionToShow = isExpanded ? description : `${description.substring(0, 100)}...`;
+
   return (
-    <div className='relative p-5 h-[auto] w-full bg-[#38383C] border-1 border-[#464649] rounded-xl'>
-      <div onClick={openModal} className="cursor-pointer">
+    <div className='relative p-5 h-full w-full bg-[#38383C] border-1 border-[#464649] rounded-xl flex flex-col'>
+      <div onClick={openModal} className="cursor-pointer flex-shrink-0">
         <Image src={src} alt={alt} width={width} height={height} className="rounded-xl z-10 w-full h-auto"/>
       </div>
-      <div className='mt-3'>
+      <div className='mt-3 flex-grow'>
         <h1 className='font-montserrat font-bold text-xl'>{title}</h1>
-        <p className="font-montserrat">{description}</p>
+        <p className={`font-montserrat ${isExpanded ? '' : 'h-12 overflow-hidden text-ellipsis'}`}>
+          {isExpanded ? description : `${description.substring(0, 70)}...`}
+        </p>
+        {description.length > 70 && (
+          <button onClick={toggleDescription} className="text-purple-400 hover:underline mt-2">
+            {isExpanded ? 'Read Less' : 'Read More'}
+          </button>
+        )}
       </div>
-      <div className="flex justify-between items-center mt-4">
+      <div className="flex justify-between items-center mt-4 flex-shrink-0">
         {techStack && (
           <div className="flex gap-3 mt-2 items-center flex-wrap">
             {techStack.map((tech, index) => (
@@ -104,7 +118,6 @@ export default function ImageHoverView({ src, galleryImages, alt, width, height,
     </div>
   );
 }
-
 {/* <div className="project-card mt-20 relative w-fit">
           <Image
           src="/images/temp.png"
