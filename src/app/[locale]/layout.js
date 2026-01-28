@@ -50,10 +50,10 @@ export default async function LocaleLayout({ children, params }) {
           <ScrollToTopButton/>
           <div className="absolute opacity-50"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
           <div className="absolute top-50 right-0 opacity-50 scale-x-[-1]"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
-          <div className="absolute w-full h-screen opacity-10">
-            <div className="relative w-full h-full">
+          <div className="absolute w-full h-screen opacity-10 z-1">
+            <div className="relative w-full h-full z-1">
               <Image
-                src="/images/grid-pattern.svg" alt="" fill className="object-cover"
+                src="/images/grid-pattern.svg" alt="" fill className="object-cover z-1"
               />
             </div>
           </div>

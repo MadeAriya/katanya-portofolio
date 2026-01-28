@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { db } from '@/lib/firebase';
 import { collection, onSnapshot, query, doc, setDoc, deleteDoc } from 'firebase/firestore';
 
@@ -21,7 +21,7 @@ export const useTypingStatus = (name, nameSet, message) => {
     }
   }, [nameSet, name]);
 
-  const handleTyping = async (isTyping) => {
+  const handleTyping = useCallback(async (isTyping) => {
     if (name) {
       if (isTyping && message.length > 0) {
         await setDoc(doc(db, 'typing', name), { a: 1 });
@@ -29,11 +29,11 @@ export const useTypingStatus = (name, nameSet, message) => {
         await deleteDoc(doc(db, 'typing', name));
       }
     }
-  };
+  }, [name, message]);
 
   useEffect(() => {
     handleTyping(message.length > 0);
-  }, [message]);
+  }, [message, handleTyping]);
 
   return typingUsers;
 };

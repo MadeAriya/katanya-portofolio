@@ -3,9 +3,9 @@ import React from 'react';
 
 const NameInput = ({ name, setName, handleNameSubmit }) => {
   return (
-    <section className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8'>
-      <div className='text-center'>
-        <h1 className='font-montserrat text-4xl font-extrabold tracking-tight sm:text-5xl'>
+    <section className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 relative z-20'>
+      <div className='text-center z-999'>
+        <h1 className='font-montserrat text-4xl font-extrabold tracking-tight sm:text-5xl z-999'>
           Join the Conversation
         </h1>
         <p className='mt-4 text-lg text-gray-400'>

@@ -35,7 +35,20 @@ export default function Chat() {
       setName(savedName);
       setNameSet(true);
     }
-  }, []);
+
+    return () => {
+      if (name) {
+        const deleteTypingStatus = async () => {
+          try {
+            await deleteDoc(doc(db, "typing", name));
+          } catch (error) {
+            console.error("Error deleting typing status: ", error);
+          }
+        };
+        deleteTypingStatus();
+      }
+    };
+  }, [name]);
 
   const handleNameSubmit = (e) => {
     e.preventDefault();
@@ -63,7 +76,11 @@ export default function Chat() {
   };
 
   const changeName = async () => {
-    await deleteDoc(doc(db, "typing", name));
+    try {
+      await deleteDoc(doc(db, "typing", name));
+    } catch (error) {
+      console.error("Error deleting typing status: ", error);
+    }
     localStorage.removeItem("chat_name");
     setName("");
     setNameSet(false);

@@ -18,15 +18,15 @@
         "two": "Photography",
         "three": "Education",
         "four": "Landing Page",
-        "more" : "And More.."
+        "more": "And More.."
       }
     },
     "whyme": {
-      "title" : "Why Me?",
+      "title": "Why Me?",
       "items": {
         "item1": {
           "title": "Affordable Price",
-          "desc" : "I offer professional-quality websites at budget-friendly prices — perfect for both business and personal projects."
+          "desc": "I offer professional-quality websites at budget-friendly prices — perfect for both business and personal projects."
         },
         "item2": {
           "title": "Modern & Responsive Design",
@@ -117,7 +117,10 @@
         "desc": "Red Hills Villa is a serene luxury getaway nestled in nature, brought to life through a visually immersive and user-friendly website experience."
       },
       "weddingInvitation": {
-        "desc": "A modern and elegant wedding invitation website designed to beautifully showcase the couple’s love story, event details, RSVP form, photo gallery, and countdown to the big day. Fully responsive and easy to personalize. This is a sample website"
+        "desc": "A modern and elegant wedding invitation site designed to showcase the couple's love story, event details, RSVP form, photo gallery and countdown to a happy day. Responsive and easy to adjust. This is an example of a website."
+      },
+      "barbershop": {
+        "desc": "A modern barbershop website with a clean and responsive design. Built to showcase services, pricing, haircut gallery, and location with contact information. Focused on a professional look, smooth navigation, and a comfortable user experience across all devices."
       }
     }
   },
@@ -233,6 +236,15 @@
       "5": {
         "question": "Will I be able to manage the website myself?",
         "ans": "Absolutely. Your website will be built using a user-friendly CMS like WordPress, and we provide a tutorial video to help you manage it easily."
+      }
+    },
+    "after_sales": {
+      "title": "Bonus & After Sales",
+      "subtitle": "Finishing the website does not mean our collaboration ends. I will still assist you so you are not confused afterward.",
+      "points": {
+        "1": "Complete video tutorials – how to edit pages, change images, update products or services, all explained step by step.",
+        "2": "24/7 access to guides – can be replayed anytime if you forget.",
+        "3": "Light post-project support – if there are small issues, I am still ready to help."
       }
     }
   }

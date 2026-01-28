@@ -71,7 +71,16 @@ const projects = [
     href: "",
     title: "Jelajah Bali",
     galleryImages: ["/images/jelajahbali-1.png", "/images/jelajahbali-2.png", "/images/jelajahbali-3.png"],
-    description: 'items.jelajahbali.desc',
+    description: 'items.redhillsvilla.desc',
+    techStack: ["Wordpress"]
+  },
+  {
+    src: "/images/great-barbershop.png",
+    alt: "Barbershop Website",
+    href: "",
+    title: "Barbershop Website",
+    galleryImages: ["/images/great-barbershop-2.png", "/images/great-barbershop-3.png", "/images/great-barbershop-4.png"],
+    description: 'items.barbershop.desc',
     techStack: ["Wordpress"]
   }
 ];
