@@ -9,7 +9,7 @@ const LottieScroll = () => {
   const [animationData, setAnimationData] = React.useState(null);
 
   React.useEffect(() => {
-    import('@/assets/lottie/Animation - 1747623153577.json').then(setAnimationData);
+    import('@/assets/lottie/Animation - 1747623153577.json').then(data => setAnimationData({...data}));
   }, []);
 
   return (
