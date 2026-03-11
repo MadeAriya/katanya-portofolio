@@ -194,3 +194,8 @@ body {
 .pricing-card-hover.recommended {
   box-shadow: 0 0 30px rgba(185, 161, 224, 0.5);
 }
+
+/* Portfolio card transitions */
+.project-card {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}

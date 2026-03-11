@@ -139,6 +139,10 @@
   "pricing": {
     "title": "Naikkan Omset & Profesionalisme Bisnismu Lewat Website yang Kerja 24/7",
     "desc": "Saya membangun situs web yang bersih, cepat, dan dibangun untuk tumbuh bersama bisnis Anda — tanpa biaya tersembunyi atau paket yang membingungkan.",
+    "mostPopular": "Paling Populer",
+    "faqSubtitle": "Pertanyaan yang sering diajukan",
+    "sectionPricing": "Paket Harga",
+    "sectionAfterSales": "Layanan Purna Jual",
     "button": {
       "btnPackage": "Konsultasi Gratis"
     },

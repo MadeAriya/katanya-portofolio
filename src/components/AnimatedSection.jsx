@@ -3,11 +3,32 @@ import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useEffect } from 'react';
 
-const AnimatedSection = ({ children }) => {
+const defaultVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.6,
+      ease: [0.22, 1, 0.36, 1],
+      staggerChildren: 0.08,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const AnimatedSection = ({
+  children,
+  className = '',
+  delay = 0,
+  threshold = 0.08,
+  yOffset = 40,
+  duration = 0.6,
+}) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold,
   });
 
   useEffect(() => {
@@ -16,15 +37,26 @@ const AnimatedSection = ({ children }) => {
     }
   }, [controls, inView]);
 
+  const variants = {
+    hidden: { opacity: 0, y: yOffset },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration,
+        ease: [0.22, 1, 0.36, 1],
+        delay,
+      },
+    },
+  };
+
   return (
     <motion.div
       ref={ref}
+      className={className}
       initial="hidden"
       animate={controls}
-      variants={{
-        hidden: { opacity: 0, y: 50 },
-        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-      }}
+      variants={variants}
     >
       {children}
     </motion.div>

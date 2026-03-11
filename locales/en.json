@@ -139,6 +139,10 @@
   "pricing": {
     "title": "Choose the Perfect Website Plan",
     "desc": "I build websites that are clean, fast, and built to grow with your business — without hidden costs or confusing packages.",
+    "mostPopular": "Most Popular",
+    "faqSubtitle": "Frequently asked questions",
+    "sectionPricing": "Pricing Plans",
+    "sectionAfterSales": "After Sales",
     "button": {
       "btnPackage": "Free Consultation"
     },
