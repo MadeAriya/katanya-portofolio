@@ -19,8 +19,8 @@ export default function Maintenance() {
               src={animationData}
               style={{ height: '300px', width: '300px' }}
             />
-            <h1 className="text-4xl font-bold mt-8">{t('title')}</h1>
-            <p className="text-lg text-gray-400 mt-4">{t('desc')}</p>
+            <h1 className="text-4xl font-poppins font-black mt-8 text-[#1A1A2E]">{t('title')}</h1>
+            <p className="text-lg text-[#1A1A2E]/60 font-montserrat font-medium mt-4">{t('desc')}</p>
           </div>
         </section>
       </AnimatedSection>

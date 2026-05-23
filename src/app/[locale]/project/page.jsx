@@ -110,28 +110,29 @@ export default function Project(){
 
     return(
         <>
-            <main className='relative z-30'>
+            <main className='relative z-30 overflow-x-hidden'>
                 <Navbar/>
                 
                 <AnimatedSection>
-                  <section className="mx-4 md:mx-16 lg:mx-24 flex flex-col justify-center mt-24 md:mt-32">
+                  <section className="mx-4 md:mx-16 lg:mx-24 flex flex-col justify-center pt-28 md:pt-36">
+                      {/* Header */}
                       <div className="flex items-center gap-4 mb-2">
-                          <span className="w-12 h-1 rounded-full bg-[#5F399E]" />
-                          <span className="font-montserrat text-sm md:text-base text-white/60 uppercase tracking-wider">{t('title')}</span>
+                          <div className="w-12 h-[3px] bg-[#FF6B35]" />
+                          <span className="font-montserrat text-sm md:text-base text-[#1A1A2E]/60 uppercase tracking-wider font-bold">{t('title')}</span>
                       </div>
-                      <h1 className="font-poppins font-bold text-2xl md:text-4xl text-white mb-8">{t('description')}</h1>
+                      <h1 className="font-poppins font-black text-2xl md:text-4xl text-[#1A1A2E] mb-8">{t('description')}</h1>
                       
+                      {/* Filter buttons */}
                       <div className="flex flex-wrap gap-3 my-6">
                         {allTechs.map((tech) => (
                           <motion.button
                             key={tech}
                             onClick={() => setFilter(tech)}
-                            whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.98 }}
-                            className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-all duration-300 ${
+                            className={`px-4 py-2.5 text-sm font-bold font-montserrat transition-all duration-200 rounded-sm ${
                               filter === tech
-                                ? 'bg-[#5F399E] text-white shadow-lg shadow-[#5F399E]/30 border border-[#5F399E]'
-                                : 'bg-[#24283C] text-white/80 hover:bg-[#2d3350] hover:text-white border border-white/5'
+                                ? 'bg-[#FF6B35] text-white border-3 border-[#1A1A2E] shadow-[3px_3px_0px_#1A1A2E]'
+                                : 'bg-white text-[#1A1A2E] border-2 border-[#1A1A2E] shadow-[2px_2px_0px_#1A1A2E] hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[3px_3px_0px_#1A1A2E]'
                             }`}
                           >
                             {tech}

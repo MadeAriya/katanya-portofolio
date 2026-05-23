@@ -33,10 +33,28 @@ export default function ScrollToTopButton() {
         <button
           onClick={scrollToTop}
           aria-label="Scroll to top"
-          className="fixed bottom-8 right-8 p-3 rounded-full border-1 text-white shadow-lg"
-          style={{ zIndex: 1000 }}
+          className="fixed bottom-8 right-8 w-12 h-12 flex items-center justify-center text-white font-bold transition-all duration-150 hover:translate-x-[-2px] hover:translate-y-[-2px] active:translate-x-[2px] active:translate-y-[2px]"
+          style={{
+            zIndex: 1000,
+            backgroundColor: '#FF6B35',
+            border: '3px solid #1A1A2E',
+            borderRadius: '6px',
+            boxShadow: '4px 4px 0px #1A1A2E',
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.boxShadow = '6px 6px 0px #1A1A2E';
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.boxShadow = '4px 4px 0px #1A1A2E';
+          }}
+          onMouseDown={(e) => {
+            e.currentTarget.style.boxShadow = '1px 1px 0px #1A1A2E';
+          }}
+          onMouseUp={(e) => {
+            e.currentTarget.style.boxShadow = '6px 6px 0px #1A1A2E';
+          }}
         >
-<i className="fa-solid fa-arrow-up"></i>
+          <i className="fa-solid fa-arrow-up text-lg"></i>
         </button>
       )}
     </>

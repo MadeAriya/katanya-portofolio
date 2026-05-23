@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Navbar from '@/components/navbar';
 import Cta from '@/components/cta';
 import Footer from '@/components/footer';
-import Image from 'next/image';
 import { useState } from 'react'
 import { useTranslations } from 'next-intl';
 import AnimatedSection from '@/components/AnimatedSection';
@@ -21,7 +20,7 @@ export default function Contact(){
         e.preventDefault();
         setStatus(
         <>
-            <span className='bg-white w-[100px] h-[30px]'>Sending Message..</span>
+            <span className='text-[#1A1A2E] font-bold'>Sending Message..</span>
         </>
         );
 
@@ -40,85 +39,133 @@ export default function Contact(){
         }
     };
 
+    const socialLinks = [
+        {
+            href: "https://www.linkedin.com/in/i-made-ariya-putra",
+            faIcon: "fa-brands fa-linkedin-in",
+            label: "LinkedIn",
+            bgColor: "bg-[#0077B5]",
+        },
+        {
+            href: "https://www.instagram.com/mdeariya_/",
+            faIcon: "fa-brands fa-instagram",
+            label: "Instagram",
+            bgColor: "bg-[#E1306C]",
+        },
+        {
+            href: "https://github.com/MadeAriya/",
+            faIcon: "fa-brands fa-github",
+            label: "Github",
+            bgColor: "bg-[#1A1A2E]",
+        },
+        {
+            href: "https://discord.com/users/694010733070909521",
+            faIcon: "fa-brands fa-discord",
+            label: "Discord",
+            bgColor: "bg-[#5865F2]",
+        },
+        {
+            href: "https://www.facebook.com/i.m.putra.3576?mibextid=ZbWKwL",
+            faIcon: "fa-brands fa-facebook-f",
+            label: "Facebook",
+            bgColor: "bg-[#1877F2]",
+        },
+    ];
+
     return(
         <>
         <main className='relative z-30'>
                         <Navbar/>
                         
                         <AnimatedSection>
-                            <section className='mx-10 md:mx-40 mt-40'>
-                                <div className="flex gap-5 items-center">
-                                    <h1 className="font-montserrat  text-[20px]">{t('title')}</h1>
-                                    <span className="w-[80px] h-[5px] bg-[#38383C]"></span>
+                            <section className='mx-6 md:mx-40 pt-28 md:pt-36 mt-10'>
+                                <div className="flex gap-4 items-center">
+                                    <h1 className="font-montserrat text-[20px] text-[#1A1A2E] font-bold">{t('title')}</h1>
+                                    <span className="w-[80px] h-[3px] bg-[#FF6B35]"></span>
                                 </div>
-                                <h1 className='font-montserrat font-extrabold text-[40px]'>{t('sectionTitle')}</h1>
-                                <p>{t('desc')}</p>
-                                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10'>
-                                    <a href="https://www.linkedin.com/in/i-made-ariya-putra" className='flex gap-4 items-center social-link-hover'>
-                                        <div className='w-16 h-16 bg-gradient-to-br from-[#D9D9D9] to-[#0077B5] rounded-lg flex items-center justify-center'>
-                                            <Image src="/images/linkedin.svg" alt="LinkedIn" width={40} height={40}/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <span>LinkedIn</span>
-                                            <Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-2"/>
-                                        </div>
-                                    </a>
-                                    <a href="https://www.instagram.com/mdeariya_/" className='flex gap-4 items-center social-link-hover'>
-                                        <div className='w-16 h-16 bg-gradient-to-br from-[#D9D9D9] to-[#E1306C] rounded-lg flex items-center justify-center'>
-                                            <Image src="/images/instagram.svg" alt="Instagram" width={40} height={40}/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <span>Instagram</span>
-                                            <Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-2"/>
-                                        </div>
-                                    </a>
-                                    <a href="https://github.com/MadeAriya/" className='flex gap-4 items-center social-link-hover'>
-                                        <div className='w-16 h-16 bg-gradient-to-br from-[#D9D9D9] to-[#000] rounded-lg flex items-center justify-center'>
-                                            <Image src="/images/github.svg" alt="Github" width={40} height={40}/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <span>Github</span>
-                                            <Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-2"/>
-                                        </div>
-                                    </a>
-                                    <a href="https://discord.com/users/694010733070909521" className='flex gap-4 items-center social-link-hover'>
-                                        <div className='w-16 h-16 bg-gradient-to-br from-[#D9D9D9] to-[#5865F2] rounded-lg flex items-center justify-center'>
-                                            <Image src="/images/discord.svg" alt="Discord" width={40} height={40}/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <span>Discord</span>
-                                            <Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-2"/>
-                                        </div>
-                                    </a>
-                                    <a href="https://www.facebook.com/i.m.putra.3576?mibextid=ZbWKwL" className='flex gap-4 items-center social-link-hover'>
-                                        <div className='w-16 h-16 bg-gradient-to-br from-[#D9D9D9] to-[#1877F2] rounded-lg flex items-center justify-center'>
-                                            <Image src="/images/facebook.svg" alt="Facebook" width={40} height={40}/>
-                                        </div>
-                                        <div className='flex items-center'>
-                                            <span>Facebook</span>
-                                            <Image src="/images/Arrow.svg" alt="Arrow" width={10} height={10} className="ml-2"/>
-                                        </div>
-                                    </a>
+                                <h1 className='font-poppins font-black text-[40px] text-[#1A1A2E] leading-tight mt-1'>{t('sectionTitle')}</h1>
+                                <p className='text-[#1A1A2E] mt-2 text-lg'>{t('desc')}</p>
+
+                                <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10'>
+                                    {socialLinks.map((social) => (
+                                        <a
+                                            key={social.label}
+                                            href={social.href}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className='flex gap-4 items-center group transition-transform duration-200 hover:-translate-y-1'
+                                        >
+                                            <div
+                                                className={`w-14 h-14 ${social.bgColor} rounded-sm flex items-center justify-center border-3 border-[#1A1A2E]`}
+                                                style={{ boxShadow: '4px 4px 0px #1A1A2E' }}
+                                            >
+                                                <i className={`${social.faIcon} text-white text-xl`}></i>
+                                            </div>
+                                            <div className='flex items-center'>
+                                                <span className='font-montserrat font-bold text-[#1A1A2E] text-lg group-hover:text-[#FF6B35] transition-colors'>{social.label}</span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1A1A2E" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" className="ml-2 group-hover:translate-x-1 transition-transform">
+                                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                    <polyline points="12 5 19 12 12 19"></polyline>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    ))}
                                 </div>
                             </section>
                         </AnimatedSection>
 
                         <AnimatedSection>
-                            <section className='mx-10 mt-30 md:mx-40'>
-                                <h1 className='font-montserrat font-extrabold text-[32px]'>{t('form.title')}</h1>
-                                <form onSubmit={handleSubmit} className='mt-10 grid gap-6'>
+                            <section className='mx-6 mt-20 md:mx-40'>
+                                <h1 className='font-poppins font-black text-[32px] text-[#1A1A2E]'>{t('form.title')}</h1>
+                                <form onSubmit={handleSubmit} className='mt-8 grid gap-6'>
                                     <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
-                                        <input type='text' name='name' placeholder={t('form.name')} value={formData.name} onChange={handleChange} required className='bg-[#38383C] h-14 rounded-lg p-4 w-full form-input-focus'/>
-                                        <input type='email' name='email' placeholder={t('form.email')} value={formData.email} onChange={handleChange} required className='bg-[#38383C] h-14 rounded-lg p-4 w-full form-input-focus'/>
+                                        <input
+                                            type='text'
+                                            name='name'
+                                            placeholder={t('form.name')}
+                                            value={formData.name}
+                                            onChange={handleChange}
+                                            required
+                                            className='neo-input bg-white h-14 rounded-[6px] p-4 w-full text-[#1A1A2E] placeholder-[#1A1A2E]/40 font-montserrat border-3 border-[#1A1A2E] outline-none focus:shadow-[4px_4px_0px_#FF6B35] transition-shadow'
+                                        />
+                                        <input
+                                            type='email'
+                                            name='email'
+                                            placeholder={t('form.email')}
+                                            value={formData.email}
+                                            onChange={handleChange}
+                                            required
+                                            className='neo-input bg-white h-14 rounded-[6px] p-4 w-full text-[#1A1A2E] placeholder-[#1A1A2E]/40 font-montserrat border-3 border-[#1A1A2E] outline-none focus:shadow-[4px_4px_0px_#FF6B35] transition-shadow'
+                                        />
                                     </div>
-                                    <textarea name='message' placeholder={t('form.message')} value={formData.message} onChange={handleChange} required className='bg-[#38383C] w-full h-48 rounded-lg p-4 resize-none form-input-focus'></textarea>
+                                    <textarea
+                                        name='message'
+                                        placeholder={t('form.message')}
+                                        value={formData.message}
+                                        onChange={handleChange}
+                                        required
+                                        className='neo-input bg-white w-full h-48 rounded-[6px] p-4 resize-none text-[#1A1A2E] placeholder-[#1A1A2E]/40 font-montserrat border-3 border-[#1A1A2E] outline-none focus:shadow-[4px_4px_0px_#FF6B35] transition-shadow'
+                                    ></textarea>
 
-                                    <button type='submit' className="flex justify-center items-center border-2 border-[#333336] bg-purple-600 hover:bg-purple-700 transition-colors duration-300 rounded-lg mt-5 h-14 w-full max-w-xs mx-auto md:mx-0 text-white font-bold">
+                                    <button
+                                        type='submit'
+                                        className="flex justify-center items-center bg-[#FF6B35] border-3 border-[#1A1A2E] rounded-[6px] mt-3 h-14 w-full max-w-xs mx-auto md:mx-0 text-white font-poppins font-bold text-lg transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-[6px_6px_0px_#1A1A2E] active:translate-x-[2px] active:translate-y-[2px] active:shadow-[1px_1px_0px_#1A1A2E] cursor-pointer"
+                                        style={{ boxShadow: '4px 4px 0px #1A1A2E' }}
+                                    >
                                         {t('form.button')}
                                     </button>
                                 </form>
                                 {status && (
-                                    <div className={`mt-4 text-center p-3 rounded-lg ${status.includes('berhasil') ? 'bg-green-500/20 text-green-400' : 'bg-red-500/20 text-red-400'}`}>
+                                    <div
+                                        className={`mt-6 text-center p-4 rounded-[6px] font-montserrat font-bold border-3 border-[#1A1A2E] ${
+                                            typeof status === 'string' && status.includes('berhasil')
+                                                ? 'bg-[#00D4AA] text-[#1A1A2E]'
+                                                : typeof status === 'string' && status.includes('Gagal')
+                                                    ? 'bg-[#FF6B9D] text-[#1A1A2E]'
+                                                    : 'bg-[#FFE156] text-[#1A1A2E]'
+                                        }`}
+                                        style={{ boxShadow: '4px 4px 0px #1A1A2E' }}
+                                    >
                                         {status}
                                     </div>
                                 )}

@@ -4,64 +4,71 @@ import { useState } from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
+const skillColors = [
+  'bg-[#FFE156]',
+  'bg-[#A8E6CF]',
+  'bg-[#FFB3BA]',
+  'bg-[#87CEEB]',
+  'bg-[#DDA0DD]',
+  'bg-[#FFA07A]',
+  'bg-[#B0E0E6]',
+];
+
 const cards = [
   { id: 1, content: ( 
     <>
-        <h1 className='font-montserrat text-center text-xl my-3 ml-3 mx-auto font-bold ml-8'>Front End</h1>
+        <h1 className='font-montserrat text-center text-xl my-3 mx-auto font-black text-[#1A1A2E]'>Front End</h1>
         <div className='grid grid-cols-2 w-[220px] md:w-auto justify-center gap-3 mt-2 z-5 mx-auto'>
-            <div className='flex justify-center items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center items-center bg-[#FFE156] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/tail.svg" alt='' width={40} height={40} className='p-2'/>
-                <p className='font-montserrat text-xs'>Tailwind</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>Tailwind</p>
             </div>
-            <div className='flex justify-center gap-1 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-1 items-center bg-[#A8E6CF] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/re.svg" alt='' width={30} height={30}/>
-                <p className='font-montserrat text-xs'>React</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>React</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#FFB3BA] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/bootstrap.svg" alt='' width={20} height={20}/>
-                <p className='font-montserrat text-xs'>Bootstrap</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>Bootstrap</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#87CEEB] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/html-5-svgrepo-com.svg" alt='' width={30} height={30}/>
-                <p className='font-montserrat text-xs'>HTML</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>HTML</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#DDA0DD] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/css-3-svgrepo-com.svg" alt='' width={30} height={30}/>
-                <p className='font-montserrat text-xs'>CSS</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>CSS</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#FFA07A] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/javascript-logo-svgrepo-com.svg" alt='' width={20} height={20}/>
-                <p className='font-montserrat text-xs'>Javascript</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>Javascript</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#B0E0E6] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/wordpress-color-svgrepo-com.svg" alt='' width={20} height={20}/>
-                <p className='font-montserrat text-xs'>Wordpress</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>Wordpress</p>
             </div>
         </div>
     </>
   )},
   { id: 2, content: (
     <>
-        <h1 className='font-montserrat text-center text-xl my-3 mx-auto font-bold ml-8'>Back End</h1>
+        <h1 className='font-montserrat text-center text-xl my-3 mx-auto font-black text-[#1A1A2E]'>Back End</h1>
         <div className='grid grid-cols-1 w-[185px] md:w-auto justify-center items-center gap-3 mt-2 z-5 mx-auto'>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#FFE156] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/laravel-svgrepo-com.svg" alt='' width={30} height={30}/>
-                <p className='font-montserrat text-xs'>Laravel</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>Laravel</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#A8E6CF] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/javascript-logo-svgrepo-com.svg" alt='' width={20} height={20}/>
-                <p className='font-montserrat text-xs'>Javascript</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>Javascript</p>
             </div>
-            <div className='flex justify-center gap-2 items-center bg-[#282829] w-full rounded-[10px] p-2'>
+            <div className='flex justify-center gap-2 items-center bg-[#FFB3BA] w-full rounded-sm p-2 border-2 border-[#1A1A2E]'>
                 <Image src="/images/php-svgrepo-com.svg" alt='' width={25} height={25}/>
-                <p className='font-montserrat text-xs'>PHP</p>
+                <p className='font-montserrat text-xs font-bold text-[#1A1A2E]'>PHP</p>
             </div>
         </div>
     </>
   )},
-  // { id: 3, content: (
-  //   <h1>Anjay</h1>
-  // )},
 ];
 
 export default function CardCarousel() {
@@ -79,7 +86,7 @@ export default function CardCarousel() {
           return (
             <motion.div
                 key={card.id}
-                className="absolute top-1/2 left-1/2 w-[300px] md:w-[300px] h-96 bg-[#38383C] rounded-xl shadow-xl cursor-pointer transition-all duration-500 border-1 border-[#333336]"
+                className="absolute top-1/2 left-1/2 w-[300px] md:w-[300px] h-96 bg-white rounded-lg cursor-pointer transition-all duration-500 border-[3px] border-[#1A1A2E]"
                 style={{
                     transform: `
                     translate(-50%, -50%)
@@ -89,9 +96,9 @@ export default function CardCarousel() {
                     `,
                     zIndex: cards.length - Math.abs(offset),
                     opacity: offset === 0 ? 1 : 0.5,
+                    boxShadow: offset === 0 ? '6px 6px 0px #1A1A2E' : '4px 4px 0px #1A1A2E',
                 }}
                 >
-                    <Image src='/images/bg.png' alt='' fill className='absolute top-0 right-0 -z-1'/>
                     <div className='w-[220px] mx-auto'>
                         {card.content}
                     </div>
@@ -103,15 +110,15 @@ export default function CardCarousel() {
       <div className="absolute bottom-2 flex gap-4">
         <button
           onClick={prevCard}
-          className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-600"
+          className="px-5 py-2 bg-[#FF6B35] text-white font-bold font-montserrat rounded-sm border-3 border-[#1A1A2E] shadow-[3px_3px_0px_#1A1A2E] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_#1A1A2E] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[1px_1px_0px_#1A1A2E] transition-all duration-150"
         >
-          Prev
+          ← Prev
         </button>
         <button
           onClick={nextCard}
-          className="px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-600"
+          className="px-5 py-2 bg-[#FF6B35] text-white font-bold font-montserrat rounded-sm border-3 border-[#1A1A2E] shadow-[3px_3px_0px_#1A1A2E] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_#1A1A2E] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[1px_1px_0px_#1A1A2E] transition-all duration-150"
         >
-          Next
+          Next →
         </button>
       </div>
     </div>

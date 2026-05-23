@@ -3,16 +3,16 @@
     "hero": {
       "tagline": "I MADE ARIYA PUTRA",
       "title": "Website Developer & Tech Enthusiast",
-      "desc": "Website developer who currently focused on Web Development. Other than that, I also interested in UX/UI Design, Mobile and AI Development, and IOT. I love to learn new things and always open to new opportunities."
+      "desc": "I build cool websites that actually work. Currently deep into Web Dev, but also geeking out on UX/UI, Mobile, AI, and IoT. Always learning, always building."
     },
     "intro": {
-      "title": "Hi There, I'm Ariya",
-      "desc1": "Hey! I’m a freelance  web developer who loves helping small businesses get cool, professional websites—without spending a fortune.",
-      "desc2": "I know having a website today is super important to build trust and get your business noticed. So I’ll make sure your site looks great, works smoothly on any device, and fits exactly what your business needs—all at a price that won’t stress you out!"
+      "title": "Hey! I'm Ariya ✌️",
+      "desc1": "I'm a freelance web dev who helps small businesses look big online — without burning a hole in your wallet.",
+      "desc2": "Your business deserves a website that's fast, looks amazing on any screen, and actually gets you noticed. That's exactly what I build."
     },
     "services": {
-      "title": "Custom Websites Built for Your Needs",
-      "desc": "With a focus on performance, clean code, and user experience, I’ll help you turn visitors into customers.",
+      "title": "Websites Built for YOUR Needs",
+      "desc": "Clean code. Great UX. Visitors → Customers.",
       "items": {
         "one": "Small Business",
         "two": "Photography",
@@ -22,34 +22,34 @@
       }
     },
     "whyme": {
-      "title": "Why Me?",
+      "title": "Why Pick Me? 🤔",
       "items": {
         "item1": {
-          "title": "Affordable Price",
-          "desc": "I offer professional-quality websites at budget-friendly prices — perfect for both business and personal projects."
+          "title": "Won't Break the Bank 💰",
+          "desc": "Pro-quality websites at prices that make sense — for business or personal projects."
         },
         "item2": {
-          "title": "Modern & Responsive Design",
-          "desc": "A responsive, aesthetic design tailored to match your brand's character and appeal."
+          "title": "Looks Good Everywhere 📱",
+          "desc": "Responsive, aesthetic designs that match your brand's vibe perfectly."
         },
         "item3": {
-          "title": "All-in-One Package",
-          "desc": "Everything your website needs in one service — from design and development to optimization and post-launch support."
+          "title": "All-in-One Deal 📦",
+          "desc": "Design, dev, optimization, and post-launch support — all in one package."
         },
         "item4": {
-          "title": "Client-Focused Workflow",
-          "desc": "I prioritize understanding your vision and goals, ensuring the final product reflects your brand perfectly."
+          "title": "Your Vision, My Code 🎯",
+          "desc": "I actually listen to what you want and make sure the result nails it."
         }
       }
     },
     "button": {
-      "moreAbout": "More About Me",
-      "moreProject": "More Project",
-      "pricing": "See Pricing"
+      "moreAbout": "More About Me →",
+      "moreProject": "See More Stuff →",
+      "pricing": "See Pricing →"
     },
     "projects": {
-      "title": "Explore My Works",
-      "desc": "Discover innovative web solutions crafted with passion and precision.",
+      "title": "Stuff I've Built 🛠️",
+      "desc": "Real projects. Real clients. Real results.",
       "yaguwipa": {
         "title": "Yayasan Guna Widya Paramesthi",
         "desc": "I developed a foundation website for a client to showcase their vision, programs, and donation opportunities. The site is designed to be informative, responsive, and easy to manage."
@@ -60,8 +60,8 @@
       }
     },
     "cta": {
-      "title": "Let's 🚀 Work Together",
-      "desc": "Need a developer to bring your idea to life? I'm here to help — let's talk"
+      "title": "Let's Build Something Cool 🔥",
+      "desc": "Got an idea? Need a dev? Let's make it happen — hit me up!"
     }
   },
   "about": {
@@ -111,7 +111,7 @@
         "desc": "Worked on company website templates by updating content and layout during internship."
       },
       "coffeeaura": {
-        "desc": "A responsive WordPress-based website created for a local coffee shop. Built using the WordPress theme and customized with Elementor, this site highlights the brand’s identity through a warm and inviting design. Features include a clean homepage, menu section, contact form, and call-to-action buttons — all tailored for a smooth user experience."
+        "desc": "A responsive WordPress-based website created for a local coffee shop. Built using the WordPress theme and customized with Elementor, this site highlights the brand's identity through a warm and inviting design. Features include a clean homepage, menu section, contact form, and call-to-action buttons — all tailored for a smooth user experience."
       },
       "redhillsvilla": {
         "desc": "Red Hills Villa is a serene luxury getaway nestled in nature, brought to life through a visually immersive and user-friendly website experience."
@@ -209,7 +209,7 @@
       },
       "two": {
         "title": "Concise Proposal",
-        "desc": "We’ll send you a complete proposal that includes pricing, service details, and design samples for your review and approval."
+        "desc": "We'll send you a complete proposal that includes pricing, service details, and design samples for your review and approval."
       },
       "three": {
         "title": "Development Process",
@@ -217,7 +217,7 @@
       },
       "four": {
         "title": "Revision & Finalization",
-        "desc": "We’ll receive your feedback and make revisions according to the agreed terms to ensure the final result meets your expectations."
+        "desc": "We'll receive your feedback and make revisions according to the agreed terms to ensure the final result meets your expectations."
       }
     },
     "faq": {
@@ -227,7 +227,7 @@
       },
       "2": {
         "question": "Do I need to have technical knowledge?",
-        "ans": "Not at all! We’ll guide you through the entire process—from start to launch. We also provide a user guide for your convenience."
+        "ans": "Not at all! We'll guide you through the entire process—from start to launch. We also provide a user guide for your convenience."
       },
       "3": {
         "question": "Can I request revisions?",

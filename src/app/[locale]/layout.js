@@ -4,7 +4,6 @@ import { notFound } from 'next/navigation';
 import { setRequestLocale } from 'next-intl/server';
 import { poppins, montserrat, island, inter } from '@/app/fonts/font'
 import ScrollToTopButton from "@/components/scrollToTop";
-import MouseGlow from '@/components/MouseGlow';
 import  Image  from 'next/image';
 
 export const metadata = {
@@ -46,18 +45,18 @@ export default async function LocaleLayout({ children, params }) {
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <MouseGlow />
           <ScrollToTopButton/>
-          <div className="absolute opacity-50"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
-          <div className="absolute top-50 right-0 opacity-50 scale-x-[-1]"><Image src="/images/spotlight.png" alt="" width={600} height={600}/></div>
-          <div className="absolute w-full h-screen opacity-10 z-1">
-            <div className="relative w-full h-full z-1">
+          {/* Neo Brutalism grid pattern — more visible */}
+          <div className="fixed inset-0 opacity-[0.03] z-0 pointer-events-none">
+            <div className="relative w-full h-full">
               <Image
-                src="/images/grid-pattern.svg" alt="" fill className="object-cover z-1"
+                src="/images/grid-pattern.svg" alt="" fill className="object-cover"
               />
             </div>
           </div>
-          {children}
+          <div className="relative z-10">
+            {children}
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

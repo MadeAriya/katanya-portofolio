@@ -4,6 +4,10 @@
 /* Custom variant */
 @custom-variant dark (&:is(.dark *));
 
+/* ========================================
+   NEO BRUTALISM DESIGN SYSTEM
+   ======================================== */
+
 /* Theme inline variables */
 @theme inline {
   --color-background: var(--background);
@@ -48,88 +52,60 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
-/* Light theme defaults */
+/* ========================================
+   NEO BRUTALISM COLOR PALETTE
+   ======================================== */
 :root {
-  --radius: 0.625rem;
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  /* Neo Brutalism Core */
+  --neo-bg: #FFFDF7;
+  --neo-card: #FFFFFF;
+  --neo-text: #1A1A2E;
+  --neo-border: #1A1A2E;
+  --neo-primary: #FF6B35;
+  --neo-secondary: #7B2FF2;
+  --neo-accent-yellow: #FFE156;
+  --neo-accent-teal: #00D4AA;
+  --neo-accent-pink: #FF6B9D;
+  --neo-accent-blue: #4ECDC4;
+  --neo-shadow: #1A1A2E;
 
-  /* fallback */
-  --background: #ffffff;
-  --foreground: #171717;
+  --radius: 0.5rem;
+  --background: #FFFDF7;
+  --foreground: #1A1A2E;
+  --card: #FFFFFF;
+  --card-foreground: #1A1A2E;
+  --popover: #FFFFFF;
+  --popover-foreground: #1A1A2E;
+  --primary: #FF6B35;
+  --primary-foreground: #FFFFFF;
+  --secondary: #7B2FF2;
+  --secondary-foreground: #FFFFFF;
+  --muted: #F0EDE6;
+  --muted-foreground: #64648C;
+  --accent: #FFE156;
+  --accent-foreground: #1A1A2E;
+  --destructive: #FF4444;
+  --border: #1A1A2E;
+  --input: #1A1A2E;
+  --ring: #7B2FF2;
+  --chart-1: #FF6B35;
+  --chart-2: #7B2FF2;
+  --chart-3: #00D4AA;
+  --chart-4: #FFE156;
+  --chart-5: #FF6B9D;
+  --sidebar: #FFFDF7;
+  --sidebar-foreground: #1A1A2E;
+  --sidebar-primary: #FF6B35;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #FFE156;
+  --sidebar-accent-foreground: #1A1A2E;
+  --sidebar-border: #1A1A2E;
+  --sidebar-ring: #7B2FF2;
 }
 
-/* Dark theme */
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
-/* Tambahan preferensi sistem dari CSS lama */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1D1D1F;
-    --foreground: #fffcfc;
-  }
-}
-
-/* Styling global */
+/* ========================================
+   GLOBAL BASE STYLES
+   ======================================== */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -139,63 +115,267 @@
   }
 }
 
-/* Fallback untuk non-tailwind (optional, dari CSS lama) */
 body {
   background: var(--background);
   color: var(--foreground);
 }
 
-.mouse-glow {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(185, 161, 224, 0.2) 0%, rgba(185, 161, 224, 0) 70%);
-  filter: blur(50px);
-  transform: translate(-50%, -50%);
-  transition: all 0.1s ease;
+/* ========================================
+   NEO BRUTALISM UTILITY CLASSES
+   ======================================== */
+
+/* Card — thick border + hard offset shadow */
+.neo-card {
+  background: var(--neo-card);
+  border: 3px solid var(--neo-border);
+  box-shadow: 5px 5px 0px var(--neo-shadow);
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.neo-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0px var(--neo-shadow);
+}
+
+/* Button — bold, chunky, interactive */
+.neo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-montserrat), sans-serif;
+  border: 3px solid var(--neo-border);
+  border-radius: 6px;
+  box-shadow: 4px 4px 0px var(--neo-shadow);
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  text-decoration: none;
+}
+
+.neo-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--neo-shadow);
+}
+
+.neo-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px var(--neo-shadow);
+}
+
+.neo-btn-primary {
+  background: var(--neo-primary);
+  color: #FFFFFF;
+}
+
+.neo-btn-secondary {
+  background: var(--neo-secondary);
+  color: #FFFFFF;
+}
+
+.neo-btn-yellow {
+  background: var(--neo-accent-yellow);
+  color: var(--neo-text);
+}
+
+.neo-btn-outline {
+  background: var(--neo-card);
+  color: var(--neo-text);
+}
+
+/* Input — thick border, clean */
+.neo-input {
+  border: 3px solid var(--neo-border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  background: var(--neo-card);
+  color: var(--neo-text);
+  font-family: var(--font-montserrat), sans-serif;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.neo-input:focus {
+  outline: none;
+  box-shadow: 4px 4px 0px var(--neo-shadow);
+  transform: translate(-1px, -1px);
+}
+
+/* Shadow utility */
+.neo-shadow {
+  box-shadow: 4px 4px 0px var(--neo-shadow);
+}
+
+.neo-shadow-lg {
+  box-shadow: 6px 6px 0px var(--neo-shadow);
+}
+
+.neo-shadow-xl {
+  box-shadow: 8px 8px 0px var(--neo-shadow);
+}
+
+/* Tag/Badge — colorful with border */
+.neo-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.375rem 0.75rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  border: 2px solid var(--neo-border);
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px var(--neo-shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.neo-tag:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0px var(--neo-shadow);
+}
+
+/* Section wrapper */
+.neo-section {
+  border: 3px solid var(--neo-border);
+  border-radius: 8px;
+  box-shadow: 6px 6px 0px var(--neo-shadow);
+}
+
+/* Highlight marker effect */
+.neo-highlight {
+  background: var(--neo-accent-yellow);
+  padding: 0.125rem 0.5rem;
+  border-radius: 2px;
+  display: inline;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+/* Neo Brutalism decorative shapes */
+.neo-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--neo-border);
+  display: inline-block;
+}
+
+.neo-line {
+  height: 4px;
+  background: var(--neo-border);
+  border-radius: 0;
+}
+
+/* ========================================
+   COMPONENT-SPECIFIC OVERRIDES
+   ======================================== */
+
+/* Certificate hover — Neo style */
 .certificate-hover {
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .certificate-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px var(--neo-shadow);
 }
 
+/* Social link hover — Neo style */
 .social-link-hover {
-  transition: all 0.3s ease;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 .social-link-hover:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
+  transform: translate(-2px, -2px) !important;
+  box-shadow: 5px 5px 0px var(--neo-shadow);
 }
 
+/* Form input focus — Neo style */
 .form-input-focus:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(185, 161, 224, 0.5);
-  border-color: rgba(185, 161, 224, 0.8);
+  box-shadow: 4px 4px 0px var(--neo-shadow);
+  border-color: var(--neo-border);
+  transform: translate(-1px, -1px);
 }
 
+/* Pricing card hover — Neo style */
 .pricing-card-hover {
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .pricing-card-hover:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: translate(-3px, -3px);
+  box-shadow: 8px 8px 0px var(--neo-shadow);
 }
 
 .pricing-card-hover.recommended {
-  box-shadow: 0 0 30px rgba(185, 161, 224, 0.5);
+  box-shadow: 6px 6px 0px var(--neo-primary);
 }
 
-/* Portfolio card transitions */
+/* Portfolio card transitions — Neo style */
 .project-card {
-  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Scrollbar Neo styling */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--neo-bg);
+  border-left: 3px solid var(--neo-border);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neo-primary);
+  border: 2px solid var(--neo-border);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neo-secondary);
+}
+
+/* Selection color */
+::selection {
+  background: var(--neo-accent-yellow);
+  color: var(--neo-text);
+}
+
+/* ========================================
+   VERTICAL TIMELINE — NEO BRUTALISM OVERRIDE
+   ======================================== */
+.vertical-timeline::before {
+  background: var(--neo-border) !important;
+  width: 3px !important;
+}
+
+.vertical-timeline-element-date {
+  color: var(--neo-text) !important;
+  font-weight: 700 !important;
+  font-family: var(--font-montserrat), sans-serif !important;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+  color: var(--neo-text) !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right-color: var(--neo-border) !important;
+}
+
+/* ========================================
+   RADIX ACCORDION — NEO BRUTALISM OVERRIDE
+   ======================================== */
+[data-slot="accordion-trigger"] svg {
+  color: var(--neo-text) !important;
+}
+
+/* ========================================
+   GLOBAL RESPONSIVE IMAGE UTILITY
+   ======================================== */
+img, video {
+  max-width: 100%;
+  height: auto;
 }

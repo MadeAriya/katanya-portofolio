@@ -99,9 +99,9 @@ export default function Chat() {
   return (
     <>
       <MemoizedNavbar />
-      <section className='mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8 lg:mb-10'>
+      <section className='mx-auto max-w-4xl px-4 pt-28 md:pt-36 pb-16 sm:px-6 lg:px-8 lg:mb-10'>
         <MemoizedChatHeader changeName={changeName} />
-        <div className='chat-section bg-[#1A1A1A] h-[70vh] rounded-lg flex flex-col shadow-lg'>
+        <div className='chat-section bg-white h-[70vh] rounded-lg flex flex-col border-3 border-[#1A1A2E] shadow-[6px_6px_0px_#1A1A2E]'>
           <MemoizedMessageList messages={messages} name={name} />
           {typingUsers.length > 0 && (
             <div className="p-4">
@@ -117,4 +117,3 @@ export default function Chat() {
     </>
   );
 }
-

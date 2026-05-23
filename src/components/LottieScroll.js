@@ -13,7 +13,7 @@ const LottieScroll = () => {
   }, []);
 
   return (
-    <div className="w-10 h-10 filter invert">
+    <div className="w-10 h-10">
       {animationData && <Lottie animationData={animationData} loop={true} />}
     </div>
   );
@@ -26,7 +26,7 @@ export default function LottieScrollWrapper() {
       <Suspense fallback={<div className="w-10 h-10" />}>
         <LottieScroll />
       </Suspense>
-      <p className='text-xs text-white -mt-3'>Scroll Down</p>
+      <p className='text-xs text-[#1A1A2E] font-montserrat font-bold -mt-3'>Scroll Down</p>
     </>
   );
 }

@@ -29,13 +29,13 @@ const MessageList = ({ messages, name }) => {
             className={`flex my-2 message-item ${msg.name === name ? 'justify-end' : 'justify-start'}`}
           >
             <div
-              className={`p-3 rounded-lg max-w-xs sm:max-w-sm md:max-w-md break-words ${
-                msg.name === name ? 'bg-purple-600 text-white' : 'bg-[#38383C] text-white'
+              className={`p-3 rounded-sm max-w-xs sm:max-w-sm md:max-w-md break-words border-2 border-[#1A1A2E] ${
+                msg.name === name ? 'bg-[#FF6B35] text-white shadow-[2px_2px_0px_#1A1A2E]' : 'bg-[#FFE156] text-[#1A1A2E] shadow-[2px_2px_0px_#1A1A2E]'
               }`}
             >
-              <div className="font-bold text-sm">{msg.name}</div>
-              <div>{msg.message}</div>
-              <div className="text-xs text-gray-300 mt-1 text-right">
+              <div className="font-bold text-sm font-montserrat">{msg.name}</div>
+              <div className="font-montserrat">{msg.message}</div>
+              <div className={`text-xs mt-1 text-right font-montserrat font-medium ${msg.name === name ? 'text-white/70' : 'text-[#1A1A2E]/50'}`}>
                 {msg.timestamp?.toDate().toLocaleTimeString()}
               </div>
             </div>

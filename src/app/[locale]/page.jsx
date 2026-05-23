@@ -2,7 +2,6 @@
 import Navbar from "@/components/navbar";
 import Cta from "@/components/cta";
 import Footer from "@/components/footer";
-import LottieScrollWrapper from "@/components/LottieScroll";
 import ImageHover from "@/components/projectCard";
 import Link from 'next/link';
 import Image from "next/image";
@@ -41,26 +40,44 @@ export default function Home() {
   };
 
   const title = t('hero.title').split(' ').map((word, index) => (
-    <motion.span key={index} variants={item} className={word === 'Tech' ? 'text-[#B9A1E0]' : ''}>
+    <motion.span key={index} variants={item} className={word === 'Tech' || word === 'Teknologi' ? 'neo-highlight' : ''}>
       {word}{' '}
     </motion.span>
   ));
 
+  // Colors for Why Me cards
+  const whyMeColors = [
+    'bg-[#FFE156]',  // yellow
+    'bg-[#A8E6CF]',  // green mint
+    'bg-[#FF6B9D]',  // pink
+    'bg-[#87CEEB]',  // sky blue
+  ];
+
+  // Colors for service tags
+  const serviceTagColors = [
+    'bg-[#FFE156]',  // yellow
+    'bg-[#A8E6CF]',  // mint
+    'bg-[#FFB3BA]',  // pink
+    'bg-[#87CEEB]',  // blue
+    'bg-[#DDA0DD]',  // plum
+  ];
+
   return (
-    <main className="relative z-30">
+    <main className="relative z-30 overflow-x-hidden">
       <Navbar/>
       
-      <section className="flex flex-col justify-center items-center pt-20 md:pt-28 gap-6 px-4 md:px-0 max-w-4xl mx-auto">
+      {/* ===== HERO SECTION ===== */}
+      <section className="flex flex-col justify-center items-center pt-28 md:pt-36 gap-6 px-4 md:px-0 max-w-4xl mx-auto pb-16">
         <motion.span
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="font-montserrat font-semibold text-xs md:text-sm text-[#B9A1E0] uppercase tracking-widest"
+          className="font-montserrat font-black text-xs md:text-sm text-[#1A1A2E] uppercase tracking-[0.3em] border-2 border-[#1A1A2E] px-4 py-2 bg-[#FFE156] shadow-[3px_3px_0px_#1A1A2E]"
         >
           {t('hero.tagline')}
         </motion.span>
         <motion.h1
-          className="font-montserrat font-extrabold text-center text-4xl sm:text-5xl md:text-7xl text-white max-w-3xl mx-auto md:max-w-4xl leading-tight"
+          className="font-poppins font-black text-center text-5xl sm:text-6xl md:text-8xl text-[#1A1A2E] max-w-3xl mx-auto md:max-w-4xl leading-[1.1]"
           variants={container}
           initial="hidden"
           animate="show"
@@ -71,75 +88,116 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="font-montserrat text-sm md:text-lg text-center text-white/80 max-w-xl mx-auto leading-relaxed"
+          className="font-montserrat text-base md:text-xl text-center text-[#1A1A2E]/70 max-w-xl mx-auto leading-relaxed font-medium"
         >
           {t('hero.desc')}
         </motion.p>
-        <LottieScrollWrapper/>
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.8 }}
+          className="flex gap-4 mt-4"
+        >
+          <Link
+            href={`/${locale}/project`}
+            className="neo-btn neo-btn-primary font-montserrat text-sm md:text-base"
+          >
+            {t('button.moreProject')}
+          </Link>
+          <Link
+            href={`/${locale}/contact`}
+            className="neo-btn neo-btn-outline font-montserrat text-sm md:text-base"
+          >
+            {t('button.moreAbout')}
+          </Link>
+        </motion.div>
+
+        {/* Scroll indicator */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1, y: [0, 8, 0] }}
+          transition={{ delay: 1.2, y: { repeat: Infinity, duration: 1.5, ease: "easeInOut" } }}
+          className="mt-8 flex flex-col items-center gap-2"
+        >
+          <span className="font-montserrat text-xs font-bold text-[#1A1A2E]/50 uppercase tracking-widest">Scroll</span>
+          <div className="w-6 h-10 border-3 border-[#1A1A2E] rounded-full flex items-start justify-center p-1">
+            <motion.div
+              animate={{ y: [0, 12, 0] }}
+              transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+              className="w-2 h-2 bg-[#1A1A2E] rounded-full"
+            />
+          </div>
+        </motion.div>
       </section>
 
+      {/* ===== INTRO SECTION ===== */}
       <AnimatedSection delay={0.1} yOffset={30}>
-        <section className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-24 md:mt-32 mx-4 md:mx-16 lg:mx-24">
-          <div
-            className="col-span-1 md:col-span-5 px-6 py-12 md:py-16 md:px-16 rounded-2xl border border-white/5 shadow-xl overflow-hidden relative"
-            style={{ background: 'linear-gradient(135deg, #1F2127 0%, #2d1f4e 50%, #5F399E 100%)' }}
-          >
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(185,161,224,0.15)_0%,transparent_50%)]" />
+        <section className="grid grid-cols-1 md:grid-cols-5 gap-6 mt-8 md:mt-16 mx-4 md:mx-16 lg:mx-24">
+          {/* Main intro card — full width */}
+          <div className="col-span-1 md:col-span-5 px-6 py-10 md:py-14 md:px-14 neo-section bg-[#7B2FF2] relative overflow-hidden">
+            {/* Decorative elements */}
+            <div className="absolute top-4 right-4 md:top-6 md:right-6 text-4xl md:text-6xl opacity-20 rotate-12 select-none">★</div>
+            <div className="absolute bottom-4 left-4 md:bottom-6 md:left-6 text-2xl md:text-4xl opacity-20 -rotate-6 select-none">✦</div>
             <div className="relative">
-              <h2 className="font-poppins text-white text-2xl md:text-5xl font-bold tracking-tight">{t('intro.title')}</h2>
-              <p className="font-montserrat text-white/90 md:text-lg mt-4 md:mt-6 leading-relaxed max-w-3xl">{t('intro.desc1')}</p>
-              <p className="font-montserrat text-white/90 md:text-lg mt-3 leading-relaxed max-w-3xl">{t('intro.desc2')}</p>
+              <h2 className="font-poppins text-white text-3xl md:text-5xl font-black tracking-tight">{t('intro.title')}</h2>
+              <p className="font-montserrat text-white/90 md:text-lg mt-4 md:mt-6 leading-relaxed max-w-3xl font-medium">{t('intro.desc1')}</p>
+              <p className="font-montserrat text-white/90 md:text-lg mt-3 leading-relaxed max-w-3xl font-medium">{t('intro.desc2')}</p>
             </div>
           </div>
+
+          {/* CTA card — copy email */}
           <motion.div
-            whileHover={{ y: -4 }}
-            className="col-span-1 md:col-span-2 md:row-span-1 md:row-start-2 p-8 md:p-10 bg-[#1F2127] rounded-2xl md:min-h-[280px] border border-white/5 flex flex-col items-center text-center md:items-start md:text-left shadow-lg hover:shadow-xl hover:border-[#5F399E]/30 transition-all duration-300"
+            whileHover={{ x: -2, y: -2 }}
+            className="col-span-1 md:col-span-2 md:row-span-1 md:row-start-2 p-8 md:p-10 neo-card md:min-h-[280px] flex flex-col items-center text-center md:items-start md:text-left"
           >
-            <h2 className="font-poppins text-white text-2xl md:text-3xl font-bold">{t('cta.title')}</h2>
+            <h2 className="font-poppins text-[#1A1A2E] text-2xl md:text-3xl font-black">{t('cta.title')}</h2>
             <button
               onClick={handleCopy}
-              className="mt-6 w-full max-w-[270px] h-[56px] flex items-center justify-center gap-2 bg-[#24283C] hover:bg-[#2d3350] border border-white/5 rounded-xl font-montserrat font-medium text-white transition-all duration-300 hover:border-[#5F399E]/40"
+              className="neo-btn neo-btn-yellow mt-6 w-full max-w-[300px] font-montserrat text-sm"
             >
               <i className="fa-solid fa-copy"></i>
-              {copied ? "Copied!" : "Copy my Email address"}
+              {copied ? "Copied! ✓" : "Copy my Email address"}
             </button>
           </motion.div>
+
+          {/* Services card */}
           <motion.div
-            whileHover={{ y: -4 }}
-            className="col-span-1 md:col-span-3 md:row-span-1 md:col-start-3 md:row-start-2 md:min-h-[280px] bg-[#1F2127] rounded-2xl border border-white/5 flex flex-col md:flex-row justify-center items-center gap-6 p-6 md:p-8 shadow-lg hover:shadow-xl hover:border-[#5F399E]/30 transition-all duration-300"
+            whileHover={{ x: -2, y: -2 }}
+            className="col-span-1 md:col-span-3 md:row-span-1 md:col-start-3 md:row-start-2 md:min-h-[280px] neo-card flex flex-col md:flex-row justify-center items-center gap-6 p-6 md:p-8"
           >
             <div className="grid grid-cols-2 md:grid-cols-1 gap-3 w-full max-w-[320px]">
-              {['one', 'two', 'three', 'four', 'more'].map((key) => (
-                <div key={key} className="bg-[#24283C] rounded-xl px-4 py-3 border border-white/5 hover:border-[#5F399E]/20 transition-colors">
-                  <p className="font-montserrat text-xs md:text-sm font-medium text-white/90">{t(`services.items.${key}`)}</p>
+              {['one', 'two', 'three', 'four', 'more'].map((key, idx) => (
+                <div key={key} className={`${serviceTagColors[idx]} border-2 border-[#1A1A2E] shadow-[2px_2px_0px_#1A1A2E] px-4 py-3 hover:translate-x-[-1px] hover:translate-y-[-1px] hover:shadow-[3px_3px_0px_#1A1A2E] transition-all`}>
+                  <p className="font-montserrat text-xs md:text-sm font-bold text-[#1A1A2E]">{t(`services.items.${key}`)}</p>
                 </div>
               ))}
             </div>
             <div className="text-center md:text-left">
-              <h3 className="font-poppins text-white text-lg md:text-xl font-bold">{t('services.title')}</h3>
-              <p className="font-montserrat text-white/70 text-sm md:text-base mt-2">{t('services.desc')}</p>
+              <h3 className="font-poppins text-[#1A1A2E] text-lg md:text-xl font-black">{t('services.title')}</h3>
+              <p className="font-montserrat text-[#1A1A2E]/70 text-sm md:text-base mt-2 font-medium">{t('services.desc')}</p>
             </div>
           </motion.div>
-          <div className="col-span-1 md:col-span-5 bg-[#1F2127] rounded-2xl border border-white/5 px-6 md:px-12 py-8 shadow-lg">
+
+          {/* Why Me section */}
+          <div className="col-span-1 md:col-span-5 neo-card px-6 md:px-12 py-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
-              <h2 className="font-poppins text-white text-xl md:text-2xl font-bold text-center md:text-left">{t('whyme.title')}</h2>
+              <h2 className="font-poppins text-[#1A1A2E] text-2xl md:text-3xl font-black text-center md:text-left">{t('whyme.title')}</h2>
               <Link
                 href={`/${locale}/pricing`}
-                className="group flex items-center justify-center gap-2 border border-white/10 bg-gradient-to-r from-[#5F399E]/30 to-[#24283C] hover:from-[#5F399E]/50 hover:to-[#2d3350] rounded-xl h-12 px-6 font-medium text-white transition-all duration-300 hover:border-[#5F399E]/40"
+                className="neo-btn neo-btn-primary font-montserrat text-sm"
               >
                 {t('button.pricing')}
-                <Image src="/images/Arrow.svg" alt="Arrow" width={12} height={12} className="ml-1 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               {[1, 2, 3, 4].map((i) => (
                 <motion.div
                   key={i}
-                  whileHover={{ y: -4, scale: 1.02 }}
-                  className="bg-[#24283C] rounded-xl p-5 border border-white/5 hover:border-[#5F399E]/20 transition-all duration-300"
+                  whileHover={{ x: -3, y: -3 }}
+                  className={`${whyMeColors[i - 1]} border-3 border-[#1A1A2E] shadow-[4px_4px_0px_#1A1A2E] p-5 hover:shadow-[6px_6px_0px_#1A1A2E] transition-all`}
                 >
-                  <h4 className="font-poppins text-white text-base font-semibold">{t(`whyme.items.item${i}.title`)}</h4>
-                  <p className="font-montserrat text-white/70 text-sm mt-2 leading-relaxed">{t(`whyme.items.item${i}.desc`)}</p>
+                  <h4 className="font-poppins text-[#1A1A2E] text-base font-black">{t(`whyme.items.item${i}.title`)}</h4>
+                  <p className="font-montserrat text-[#1A1A2E]/70 text-sm mt-2 leading-relaxed font-medium">{t(`whyme.items.item${i}.desc`)}</p>
                 </motion.div>
               ))}
             </div>
@@ -147,19 +205,21 @@ export default function Home() {
         </section>
       </AnimatedSection>
       
+      {/* ===== DIVIDER — mask image ===== */}
       <AnimatedSection>
-        <div className="mt-15">
-          <Image src="/images/mask.png" alt="" width={1400} height={700}/>
+        <div className="mt-16 w-full overflow-hidden">
+          <Image src="/images/mask.png" alt="" width={1400} height={700} className="w-full h-auto object-cover" />
         </div>
       </AnimatedSection>
 
+      {/* ===== PROJECTS SECTION ===== */}
       <AnimatedSection>
         <section className="mt-24 md:mt-32 mx-4 md:mx-16 lg:mx-24 flex flex-col">
-          <div className="flex items-center gap-4 mb-4">
-            <span className="w-12 h-1 rounded-full bg-[#5F399E]" />
-            <h2 className="font-poppins text-white text-2xl md:text-4xl font-bold">{t('projects.title')}</h2>
+          <div className="flex items-center gap-4 mb-2">
+            <div className="w-12 h-3 bg-[#FF6B35] border-2 border-[#1A1A2E]" />
+            <h2 className="font-poppins text-[#1A1A2E] text-3xl md:text-5xl font-black">{t('projects.title')}</h2>
           </div>
-          <p className="font-montserrat text-white/80 max-w-xl mb-10">{t('projects.desc')}</p>
+          <p className="font-montserrat text-[#1A1A2E]/70 max-w-xl mb-10 text-base md:text-lg font-medium">{t('projects.desc')}</p>
             <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                 <ImageHover
                 src="/images/yaguwipa.png"
@@ -184,20 +244,23 @@ export default function Home() {
               />
             </div>
 
-            <div className="mx-auto mt-8">
+            <div className="mx-auto mt-10">
               <Link
                 href={`/${locale}/project`}
-                className="group flex items-center justify-center gap-2 border border-white/10 bg-gradient-to-r from-[#5F399E]/30 to-[#24283C] hover:from-[#5F399E]/50 hover:to-[#2d3350] rounded-xl h-12 px-8 font-medium text-white transition-all duration-300 hover:border-[#5F399E]/40"
+                className="neo-btn neo-btn-secondary font-montserrat text-sm md:text-base"
               >
                 {t('button.moreProject')}
-                <Image src="/images/Arrow.svg" alt="Arrow" width={12} height={12} className="ml-1 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
           </section>
         </AnimatedSection>
+
+        {/* ===== CTA SECTION ===== */}
         <AnimatedSection>
           <Cta/>
         </AnimatedSection>
+
+        {/* ===== FOOTER ===== */}
         <AnimatedSection>
           <Footer/>
         </AnimatedSection>
