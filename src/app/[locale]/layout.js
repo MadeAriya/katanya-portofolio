@@ -47,7 +47,7 @@ export default async function LocaleLayout({ children, params }) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ScrollToTopButton/>
           {/* Neo Brutalism grid pattern — more visible */}
-          <div className="fixed inset-0 opacity-[0.03] z-0 pointer-events-none">
+          <div className="fixed inset-0 opacity-[0.03] z-0 pointer-events-none overflow-hidden">
             <div className="relative w-full h-full">
               <Image
                 src="/images/grid-pattern.svg" alt="" fill className="object-cover"

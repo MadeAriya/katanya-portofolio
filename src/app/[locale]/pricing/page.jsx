@@ -117,7 +117,7 @@ export default function Pricing() {
                   </div>
                   <div className="p-6 md:p-8 pt-0">
                     <a
-                      href="https://wa.me/6289685660190"
+                      href="https://wa.me/6285111386667"
                       className={`block text-center font-bold font-montserrat px-6 py-3.5 transition-all duration-200 rounded-sm ${
                         index === 1
                           ? 'bg-[#FF6B35] text-white border-3 border-[#1A1A2E] shadow-[4px_4px_0px_#1A1A2E] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#1A1A2E]'
@@ -137,7 +137,7 @@ export default function Pricing() {
 
       {/* After Sales */}
       <AnimatedSection>
-        <section className="flex flex-col md:flex-row justify-center items-center my-16 md:my-24 mx-4 md:mx-16 gap-12 max-w-6xl">
+        <section className="flex flex-col md:flex-row justify-center items-center my-12 md:my-16 mx-4 md:mx-auto gap-10 md:gap-12 max-w-5xl">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -149,29 +149,31 @@ export default function Pricing() {
               alt="After Sales IMG"
               width={600}
               height={600}
-              className="rounded-lg w-full h-auto border-3 border-[#1A1A2E] shadow-[5px_5px_0px_#1A1A2E]"
+              className="rounded-lg w-full max-w-sm md:max-w-full mx-auto h-auto border-3 border-[#1A1A2E] shadow-[5px_5px_0px_#1A1A2E]"
             />
           </motion.div>
           <div className="w-full md:w-1/2">
-            <div className="flex items-center gap-4 mb-6">
-              <div className="w-12 h-[3px] bg-[#FF6B35]" />
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-10 h-[3px] bg-[#FF6B35]" />
               <span className="font-montserrat text-sm text-[#1A1A2E]/60 uppercase tracking-wider font-bold">{t('sectionAfterSales')}</span>
             </div>
-            <h2 className="font-poppins text-2xl md:text-4xl font-black text-[#1A1A2E]">{t('after_sales.title')}</h2>
-            <p className="font-montserrat text-[#1A1A2E]/70 text-base md:text-lg mt-4 mb-8 font-medium">{t('after_sales.subtitle')}</p>
-            {Object.keys(points).map((key) => (
-              <motion.div
-                key={key}
-                initial={{ opacity: 0, x: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: parseInt(key) * 0.1 }}
-                className="flex gap-4 items-start my-4 p-4 bg-[#FFE156] border-2 border-[#1A1A2E] shadow-[3px_3px_0px_#1A1A2E] rounded-sm"
-              >
-                <img src="/images/checklist.svg" alt="Checklist" className="mt-0.5 flex-shrink-0" />
-                <span className="text-[#1A1A2E] font-medium font-montserrat text-sm">{points[key]}</span>
-              </motion.div>
-            ))}
+            <h2 className="font-poppins text-2xl md:text-3xl font-black text-[#1A1A2E]">{t('after_sales.title')}</h2>
+            <p className="font-montserrat text-[#1A1A2E]/70 text-base mt-3 mb-6 font-medium">{t('after_sales.subtitle')}</p>
+            <div className="w-full flex flex-col gap-3">
+              {Object.keys(points).map((key) => (
+                <motion.div
+                  key={key}
+                  initial={{ opacity: 0, x: 10 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: parseInt(key) * 0.1 }}
+                  className="flex gap-4 items-start p-3 bg-[#FFE156] border-2 border-[#1A1A2E] shadow-[3px_3px_0px_#1A1A2E] rounded-sm"
+                >
+                  <img src="/images/checklist.svg" alt="Checklist" className="mt-0.5 flex-shrink-0" />
+                  <span className="text-[#1A1A2E] font-medium font-montserrat text-sm">{points[key]}</span>
+                </motion.div>
+              ))}
+            </div>
           </div>
         </section>
       </AnimatedSection>

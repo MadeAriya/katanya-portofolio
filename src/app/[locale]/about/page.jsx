@@ -64,7 +64,7 @@ export default function About() {
               date={t('jobs.job1.date')}
               dateClassName="!text-[#1A1A2E] font-bold"
               iconStyle={timelineIconStyle}
-              icon={<i className="fa-solid fa-briefcase mt-3 md:mt-5 text-base md:text-xl"></i>}
+              icon={<div className="flex w-full h-full items-center justify-center"><i className="fa-solid fa-briefcase text-base md:text-xl"></i></div>}
             >
               <div className="relative z-6">
               <Image src="/images/redsystem-logo.svg" alt="Red System Logo" width={300} height={300}></Image>
@@ -82,7 +82,7 @@ export default function About() {
               date={t('jobs.job2.date')}
               dateClassName="!text-[#1A1A2E] font-bold"
               iconStyle={timelineIconStyle}
-              icon={<i className="fa-solid fa-briefcase mt-3 md:mt-5 text-base md:text-xl"></i>}
+              icon={<div className="flex w-full h-full items-center justify-center"><i className="fa-solid fa-briefcase text-base md:text-xl"></i></div>}
             >
               <div className="relative z-6">
                 <Image src="/images/indoapps-logo.svg" alt="Indoapps Logo" width={300} height={300}></Image>

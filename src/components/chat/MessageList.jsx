@@ -16,7 +16,7 @@ const MessageList = ({ messages, name }) => {
   }, [messages]);
 
   return (
-    <ScrollArea ref={scrollAreaRef} className='flex-grow p-4 message-list-scrollbar'>
+    <ScrollArea ref={scrollAreaRef} className='flex-grow min-h-0 overflow-hidden p-4 message-list-scrollbar'>
       <AnimatePresence>
         {messages.map((msg) => (
           <motion.div

@@ -78,7 +78,7 @@ export default function CardCarousel() {
   const nextCard = () => setCurrent((current + 1) % cards.length);
 
   return (
-    <div className="mx-10 relative flex flex-col items-center justify-center w-[auto] h-[500px] overflow-hidden">
+    <div className="mx-10 relative flex flex-col items-center justify-center w-[auto] h-[540px] overflow-hidden">
       <div className="flex transition-transform duration-700">
         {cards.map((card, index) => {
           const offset = index - current;
@@ -107,7 +107,7 @@ export default function CardCarousel() {
         })}
       </div>
 
-      <div className="absolute bottom-2 flex gap-4">
+      <div className="absolute bottom-4 flex gap-4">
         <button
           onClick={prevCard}
           className="px-5 py-2 bg-[#FF6B35] text-white font-bold font-montserrat rounded-sm border-3 border-[#1A1A2E] shadow-[3px_3px_0px_#1A1A2E] hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[5px_5px_0px_#1A1A2E] active:translate-x-[1px] active:translate-y-[1px] active:shadow-[1px_1px_0px_#1A1A2E] transition-all duration-150"
